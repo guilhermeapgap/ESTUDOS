@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor01:#4900D1;
+    --cor02:#3C00AB;
+    --cor03:#25006B;
+    --font01:'Noto Sans', sans-serif;
+}
+.spinner{
+    width: 80px;
+    height: 80px;
+    border: 20px solid rgba(216, 0, 0, 0.13);
+    border-top-color: #09d;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+body{
+    font-family: var(--font01);
+    color: #1d0050;
+    font-size: 20px;
+    background-attachment: fixed;
+    background-image: linear-gradient(45deg, #cfdbffb4, #b7bdccb4, #a4b4e2b4);
+    margin: auto;
+    width: auto;
+    padding: 0px 100px 20px 100px;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor03));
+
+}
+.menu{
+    display: flex;
+    align-self: center
+}
+header h1{
+    margin-top: var(--cor02);
+}
+
+main{
+    margin: auto;
+}
+h1{
+    color: #2a0072;
+}
+
+.principal{
+    color: rgb(8, 0, 37);
+}
+  
+iframe{
+    margin: auto;
+    padding: auto;
+}
+.jorge{
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    
+}
+div#foto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+.pe{
+    width: 300px;
+    margin: auto;
+}
+ .pe>.spinner{
+     display: none;
+ }
+ .pe:hover>.spinner{
+     display: block;
+ }

@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    width: 100vw; /*view whidth*/
+    height: 100vh; /*view heiht */
+    background-color: blueviolet;
+    background: url(imagens/2d19f77fcfb8d7876a6de2318f7c4b25.jpg);
+    background-size: cover;
+}
+#container-01{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: blueviolet;
+
+}
+h1{
+    color: cornsilk;
+    text-align: center;
+    padding-top: 20px;
+}
+main{
+    display: block;
+}
+#second{
+    max-width: 640px;
+    height: 640px;
+    background: url(imagens/second.jpg);
+    margin: auto;
+}
+input#botao{
+    display: flex;
+    align-items: flex-end;
+}
+
+#botao:hover{
+    background-color: rgb(118, 76, 156);
+}
+
+main> #second > input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}

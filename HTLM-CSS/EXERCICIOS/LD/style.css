@@ -1,0 +1,95 @@
+html{
+    scroll-behavior: smooth;
+
+}
+
+
+body{
+    background-color: #d5effd;
+    background-image: url("LD4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 2000px;
+    margin: 0;
+    
+}
+
+
+#titulo{
+    font-size: 60pt ;
+    color: #06131a;
+    text-align: center;
+    font-family: 'sans-serif';
+}
+
+
+.paragrafo{
+    color: #06131a;
+    font-size: 25pt ;
+    text-align: center;
+    height: 200vh;
+}
+
+
+.p3{
+    color: #06131a;
+    font-size: 25pt ;
+    text-align: center;
+
+}
+
+
+#topMenu {
+    display: flex;
+    background-color: #194b66;
+    margin:0;
+    min-height: 10px;
+}
+
+
+#topMenu li {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+
+#topMenu li:first-child{
+    margin-right: auto;
+    
+}
+
+#topMenu li:hover{
+    transition-duration: 1s;
+    font-size: 1.2em;
+    
+}
+
+
+.bv{
+    background-color: #d5effd;
+    border-radius: 5px;
+    color: #194b66;
+    padding: 15px;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    width: 245px;
+    height: 60px;
+    Transition: scale(0.5s)
+}
+.bv:hover{
+    background-color: #9ed9f8;
+    cursor: pointer;   
+    border-radius: 20px;
+    transition-duration: 1s;
+    -webkit-transform: scale(1.5)
+    Transform:(1.5)
+    
+}
+
+
+.centralize {
+    margin: auto;
+}

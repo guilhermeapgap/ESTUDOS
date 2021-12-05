@@ -1,0 +1,29 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(85, 178, 255);
+    padding: 20px;
+    
+}
+
+section{
+    background-color: white;
+    max-width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.39);
+}
+h1, p {
+    text-align: center;
+}
+
+
+.ajuste{
+    text-align: center;
+}

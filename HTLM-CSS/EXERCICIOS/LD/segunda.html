@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda etapa</title>
+</head>
+<style>
+    html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #d5effd;
+    background-image: url("LD4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 2000px;
+    margin: 0;
+}
+div{
+    background-color: rgba(25,75,102, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: #d5effd;
+
+}
+input{
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+}
+
+button{
+    background-color: #d5effd;
+    border: none;
+    padding: 15px;
+    width: 320px;
+    border-radius: 25px;
+    color: #194b66;
+    font-size: 15px;
+    margin-top: 20px;
+
+}
+
+
+button:hover{
+    background-color: #9ed9f8;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    font-family: "sans-serif";
+}
+
+
+</style>
+<body>
+   
+    <div> 
+        
+        <h1>Crie sua conta do LD</h1>
+        <input type="text" placeholder="Nome completo" id="nome">
+        <br><br>
+        <input type="text" placeholder="Usuario" name="usuario" id="usuario">
+        <br><br>
+        <input type="date" name="data" id="data">
+        <br><br>
+         <form class="genero">
+            <input type="radio" value="Masculino" name="sexo"> Masculino 
+            <input type="radio" value="Feminino" name="sexo"> Feminino 
+        </form>
+        <br><br>
+        <form name="cadastro">
+		<input type="text" placeholder="Adicionar CPF" name="cpf" \
+			pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+			title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+             <br>
+            <button type="submit">Finalizar</button>
+        
+    </form>
+        <br><br>
+        
+    </div>
+    
+</body>
+</html>

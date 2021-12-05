@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="cal()">
+    <main>
+        <p>ganho</p>
+        <input type="number" name="ganho" id="ganho">
+        <br><br>
+        <p>gasto</p>
+        <input type="number" name="gasto" id="gasto">
+        <br><br>
+        <p>valor divida</p>
+        <input type="number" name="divida" id="divida">
+        <br><br>
+        <input type="submit" value="enviar">
+        <p id="total">total</p>
+        <input type="number" name="a" id="a">
+        <input type="number" name="b" id="b">
+    </main>
+    <script>
+        function cal(){
+            let varganho = document.getElementById('ganho')
+            let vargasto = document.getElementById('gasto')
+            let vardivida = document.getElementById('divida')
+            let calculo = varganho - vardivida
+            //document.getElementById('total').innerHTML=calculo;
+
+        }
+        /*const btn = document.querySelector('#total');
+            btn.addEventListener('click', function(e){
+        
+            e.preventDefault();
+            let selec = document.getElementById("show-gastos")
+            let displayprecos = document.getElementById("show-preços")
+
+            var input = document.querySelector('#gasto-diario');
+            var texto = input.value;
+            selec.innerHTML= `${texto}`;
+
+            var nuninput = document.querySelector('#valor-gasto');
+            var txtnun = nuninput.value;
+            displayprecos.innerHTML = `${txtnun}`
+        
+        });*/
+
+        let valor1 = document.getElementById('a')
+        let valor2 = document.getElementById('b')
+        let somav = valor1 = valor2
+        document.getElementById('total').innerHTML=somav
+        
+    </script>
+</body>
+</html>

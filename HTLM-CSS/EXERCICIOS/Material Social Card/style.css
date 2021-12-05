@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+img{
+    width: 21px;
+}
+body{
+    background-color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+}
+
+.l-main{
+    border-radius: 10px;
+    height: 432px;
+    width: 768px; 
+    padding: 30rem * 2;
+    position: relative;
+    display: flex;
+    margin: auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0);
+}
+.c-button{
+    background-color: rgb(40, 40, 192);
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    max-width: 320rem;
+    padding: 9px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.c-button:hover{
+    background-color: blue;
+}
+.c-button:active{
+    transform: translateY(0.5rem);
+}
+
+.c-card{
+    border-radius: 6rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    padding: 30px 60px;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    transition: all 385ms ease-in;
+
+}
+.c-card--instagram{
+    background-color: #e4405f;
+    clip-path: circle(2% at 648px 85%);
+}
+.c-card--index{
+    background-color: rgba(137, 137, 206, 0.267);
+    clip-path: circle(0% at rem-calc(720) 10%);
+}
+.c-card--twitter{
+    background-color: #00aced;
+    clip-path: circle(2% at 745px 85%);
+}
+.c-card--linkedin{
+    background-color: #0077b5;
+    clip-path: circle(2% at 696px 85%);
+}
+
+.c-menu{
+    align-items: flex-end;
+    bottom: 0;
+    display: flex;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    position: absolute;
+    right: 0;
+}
+.c-menu--item--index{
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+.c-menu_toggle{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    height: 1rem;
+    width: 3rem;
+}
+.c-menu_toggle:active{
+    transform: translateY(0.3rem);
+}
+.c-menu_toggle > *{
+    pointer-events: none;
+}
+
+.is-active{
+    clip-path: circle(100%);
+    transition-delay: 0s;
+    z-index: z-index(default);
+}
+:not(.is-active){
+    transition-delay: 205ms;
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Augusto Pereira</title>
+    <link rel="shortcut icon" href="imagens/curriculo-2.png" type="image/x-icon">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+            scroll-behavior: smooth;
+        }
+        body{
+            background: url(imagens/background-o.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 1234px;
+            
+        }
+        header {
+            padding: 10px 0px;
+            margin-bottom: 20px;
+        }
+        nav {
+            max-width: 1100px;
+            margin: auto;
+        }
+        h1, h2, h3, legend {
+            font-family: 'Noto Serif', serif;
+        }
+        fieldset{
+            padding: 15px 10px;
+            margin-bottom: 20px;
+            border: solid 2px #a39a9aa1;
+        }
+        legend{
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+
+        a{
+            padding: 5px;
+            color: rgba(0, 0, 0, 0.89);
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 20px;
+        }
+        nav a:hover{
+            text-shadow: 0.3px 0.3px 0px black;
+        }
+        fieldset, a{
+            font-family: 'Outfit', sans-serif;
+            text-align: justify;
+            font-weight: 400;
+        }
+
+        section{
+
+            max-width:1100px;
+            margin: auto;
+        }
+
+        #organizaçao{
+            display: flex;
+        }
+        #foto-perfil{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        #alinhamento-foto{
+            margin: 15px;
+            padding: 10px;
+        }
+        #conteudo-principal{
+
+            background-color: white;
+            border: rgba(0, 0, 0, 0.281) solid 1px;
+            box-shadow:0px -1px 20px 2px rgb(0 0 0 / 34%);
+            position: absolute;
+            left: 250px;
+            padding: 10px;
+            margin: 0px 15px;
+            border-radius: 10px;
+
+        }
+        #ajuste-perfil{
+            display: flex;
+            flex-direction:column ;
+            text-align: center;
+            background-color: #4752cccb;
+            /*box-shadow:  0px -1px 20px 2px rgb(0 0 0 / 34%);
+            background-color: rgba(255, 255, 255, 0.623);*/
+            max-width: 220px;
+            padding: 10px;
+            border-radius: 10px;
+            height: 360px;
+            margin-left: 10px;
+        }
+        #ajuste-perfil > p{
+            font-size: 1em;
+            text-align: center; 
+            padding: 10px 0px;  
+        }
+        #nome{
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        #social-media > a > img{
+            width: 20px;
+            padding: 2px;
+        }
+        #social-media > a > img:hover{
+            transform: translateY(2px);
+        }
+        #download-curriculo{
+            display: flex;
+            align-items: center;
+            background-color: #363E99;
+            padding: 2px 5px 2px 20px;
+            margin-top: 40px;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+        #download-curriculo:hover{
+            background-color: #5865FF;
+            transform: scale(1.02);
+            
+        }
+        #download-curriculo>img{           
+            width: 20px;
+            height: 20px;
+        }
+        #download-curriculo>a{
+            color: white;
+        }
+        ul{ 
+            list-style-position: inside;
+            }
+        .ul-style{
+            list-style-type: none;
+            columns: 2;
+        }
+
+
+        li{
+            padding-bottom: 30px;
+        }
+        .a-center{
+            text-align: center;
+            text-decoration: none;
+            padding: 0px;
+            
+        }
+        footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            padding: 10px;
+            background-color: fff;
+            text-indent: 150px;
+        }
+        
+        @media (max-width: 500px) {
+            #conteudo-principal{
+                position: inherit;
+            }
+            #organizaçao{
+                display: block;
+            }
+            #ajuste-perfil{
+                margin: 0px 15px 15px 15px;
+                height: 320px;
+                max-width: 550px; 
+            }
+            #foto-perfil{
+                margin: 0px auto;
+                padding-top: 0px;
+
+            }
+            #download-curriculo{
+                margin: auto;
+                padding: 0px;
+                width: 180px;
+                display: flex;
+                justify-content: center;
+            }
+            nav{
+                text-align: center;
+            }
+           
+        }
+
+
+        @media (max-width:700px) {
+            footer{
+                text-indent: 0px;
+            }
+            .ul-style{
+            columns:1;
+            }
+        }
+        @media (max-width:380px) {
+            footer{
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="#contatos">contatos</a>
+            <a href="#projetos">Projetos</a>
+        </nav>
+
+    </header>
+    <main>
+
+       <section>
+           <article id="organizaçao">
+
+                <div id="ajuste-perfil">
+
+                    <img src="imagens/maclovin.jpg" alt="eu" id="foto-perfil">
+
+                    <h1 id="nome">Guilherme Augusto Pereira</h1>
+                    <p>redes sociais</p>
+                    <div id="social-media">
+                        
+                        <a href="https://www.facebook.com/guilhermeapgap/"><img src="imagens/facebook.png" alt="facebook"></a>
+                        <a href="http://api.whatsapp.com/send?phone=5561991823714"><img src="imagens/whatsapp-icon.png" alt="whatsapp"></a>
+                        <a href="https://www.linkedin.com/in/guilherme-augusto-60892720b/"><img src="imagens/linkedin.png" alt="linkedin"></a>
+                        <a href="https://github.com/guilhermeapgap"><img src="imagens/github.png" alt="github"></a>
+
+                    </div>
+                    <div id="download-curriculo"><img src="imagens/seta_branca.png.opdownload" alt="download"><a href="Curriculo - Guilherme.zip" download="Curriculo - Guilherme.zip" type="application/zip">Curriculo</a> </div>
+                    
+                </div>
+                
+            
+            <div id="conteudo-principal">
+                <fieldset>
+                    <legend>Sobre mim</legend>
+                    Sou um Desenvolvedor completamente motivado e apaixonado pelo que faço, com 1 ano de estudo progressivo. Meu maior objetivo nessa área e me tornar um programador fullstack com foco na Linguagem Python.
+                </fieldset>      
+
+                <fieldset>
+                    <legend id="contatos">Dados pessoais</legend>
+                    <ul class="ul-style">
+                        <li><strong>NOME:</strong><br>
+                        Guilherme Augusto Pereira </li>
+                        <li><strong>IDADE:</strong><br>
+                        20 anos </li>
+                        <li><strong>ENDEREÇO:</strong><br>
+                        Valparaíso-GO, Brasil </li>
+                        <li><strong>E-MAIL:</strong><br>
+                        guilhermeapgap@hotmail.com </li>
+                        <li><strong>contato:</strong><br>
+                        +55 (61) 991823714</li>
+                        <li><strong>Línguas:</strong><br>
+                        Português nativo |Inglês avançado</li>
+                    </ul>
+                    <a href="#" class="a-center"><h5>Mais contatos</h5></a>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Características pessoais</legend>
+                    Desenvolvedor <br>
+                    tecnico de computadores <br>
+                    Empreendedor <br>
+                    Eterno Estudante <br>
+                    Linguagens de programação <br>
+                    Front-end
+                    HTML, CSS e JavaScript, Django <br>
+                    Back-end
+                    Node.js, Python
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tecnologias, frameworks e ferramentas</legend>
+                    Front-end: Bootstrap <br> Back-end: Node.js, Java e PythonBuild: Webpack, Gulp e MavenTools: Git e JenkinsSO: Linux, Windows e macOSJava EE: JPA (Hibernate), Spring e StrutsTestes: JUnit, Selenium e JestBDs: PostgreSQL, MySQL e MongoDB
+                    Formação acadêmica
+                    Mar 2020 - Hoje
+                    Especialização, Desenvolvimento Web Full Stack
+                    pucminas
+                    Pontifícia Universidade Católica de Minas Gerais
+                    Especialização em Desenvolvimento Web Full Stack. Dentre as disciplinas estão: Programação web com Node.js, Frameworks front-end: React e Angular, Frameworks back-end: Java, .Net e PHP, Servidores web e computação na nuvem, Práticas DevOps – desenvolvimento e operação; e Estratégia digital e web analytics.
+                </fieldset>
+
+                <fieldset>
+                    <legend>Formação acadêmica</legend>
+                    Ago 2020 - Dez 2022
+                    Análise de Desenvolvimento de Sistemas
+                    Faculdades UNINTER
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cursos e Treinamentos</legend>
+                    <ul>
+                        <li>Lógica de programação | SOFTBLUE - 2021
+                                Desenvolvimento de soluções com aplicação da lógica de programação, que permite a criação de softwares amigáveis, seguros e funcionais..</li>
+                        <li>HTML 5/CSS3 | CURSO EM VIDEO – 2021
+                                Conhecimento em criação de sites com HTML 5 e CSS 3.</li>
+                        <li>Desenvolvimento Web fullstack com python e Django | Udemy – 2021 conhecimentos do basico ao avançado   em html5 e css3 conhecimentos em bootstrap, js, es6, jquery, oo, mtv, python e django </li>
+                        <li>Python | CURSO EM VÍDEO–2021 
+                                Criação dos primeiros programas em linguagem python. </li>
+                        <li>Javascript | CURSO EM VÍDEO – 2021
+                                Curso voltado para iniciantes sobre ECAMAScript, a versão padronizada do JS.</li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Experiência</legend>
+                    <ul>
+                    <li>Word Service Brasil | Aeroporto de Brasília – DF 11/2020 Cargo: Auxiliar de aeroporto</li>
+                    <li>Luza Store | Valparaíso - GO
+                    11/2018 – 04/2020
+                    Cargo: Vendedor</li>
+                    <li>Fundação PRÓ CERRADO | Valparaíso - GO
+                    08/2016 – 07/2018
+                    Cargo: Aprendiz de TI</li>   
+                </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend id="projetos">Meus projetos</legend>
+                    Meu primerio projeto:<a href="https://brave-yonath-e4064d.netlify.app">Desafolgando</a> projeto desenvolvido para controle financeiro
+                </fieldset>
+
+
+            </div>
+            
+           </article>
+           
+       </section>
+       
+    </main>
+    
+</div>
+    <div id="orgfooter">
+        <footer>
+            <p><strong> Guilherme Augusto Pereira</strong></p>
+            <div id="social-media">
+        
+                <a href="https://www.facebook.com/guilhermeapgap/"><img src="imagens/facebook.png" alt="facebook"></a>
+                <a href="http://api.whatsapp.com/send?phone=5561991823714"><img src="imagens/whatsapp-icon.png" alt="whatsapp"></a>
+                <a href="https://www.linkedin.com/in/guilherme-augusto-60892720b/"><img src="imagens/linkedin.png" alt="linkedin"></a>
+                <a href="https://github.com/guilhermeapgap"><img src="imagens/github.png" alt="github"></a>
+            </div>
+        
+        </footer>
+    </div>
+</body>
+</html>

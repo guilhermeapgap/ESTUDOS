@@ -1,0 +1,158 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-image: linear-gradient(to right,#10213a,#1d4d69);
+    min-height: 800px;
+    padding: 30px 350px ;
+        
+}
+#favicon{
+    padding-right: 300px;
+}
+a{
+    color: #9aadc2;
+    text-decoration: none;
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a#botao{
+    color: #fff;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+nav:first-child{
+    margin: auto;
+}
+.botao1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right,#3598e2,#2aa8f7,#47dbe8);
+    font-weight: bold;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    
+
+}
+.botao1:hover{
+    box-shadow: 0px 15px 30px #47dbe88c;
+    zoom:110%; 
+    transition-duration: 0.5s;    
+}
+
+#imagemheader,h1{
+    display: inline-block;
+    
+}
+#container{
+    display: flex;
+    order: 1;
+}
+header >div h1{
+    color: white;
+    font-size: 3em;
+}
+header >div p {
+    color: #9aadc2;
+}
+.botao2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #ef1d3f,#ff9607);
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    zoom:110%; 
+    
+}
+.botao2:hover{
+    box-shadow: 0px 15px 60px #ef1d40c0;
+    zoom:120%;
+    transition-duration: 0.5s;
+}
+#alinhamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+section{
+    padding: 50px 350px ;
+}
+section > h1 {
+    margin: auto;
+}
+.shadow{
+    font-weight: bold;
+    padding: 50px 0px;
+    width: 400px;
+    max-height: 100px;
+    border-radius: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+.shadow:hover{
+    box-shadow:5px 5px 20px #00000046;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+}
+
+.shadow > p{
+    color: #6D7278;
+    font-size: 0.5em;
+}
+#sec1{
+    display: flex;
+    justify-content: space-between;
+}
+
+ section >div h1{
+     font-size: 30px;
+     font-weight: 800;
+     padding-bottom: 40px;
+ }
+ .center{
+    display: flex;
+    justify-content: center;
+ }
+ #imagemcomtexto{
+     display: flex;
+     align-items: flex-start;
+     font-size: 40px;
+     padding-top: 80px;
+     
+ }
+
+ .comentarios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+ }
+
+.comentarios > img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.comentarios >.aspass{
+   width: 60px; 
+   height: 60px;
+   border-radius: 0px;
+}

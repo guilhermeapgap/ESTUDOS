@@ -1,0 +1,24 @@
+.line{
+  width: 100%;
+  height: .1rem;
+  background-color: #fff;
+  box-shadow: 0.1rem 0.1rem 1px #000;
+  transition: transform 2s;
+}
+
+.show-menu .hamburguer{
+  right: 18rem;
+}
+
+.show-menu #line1 {
+  transform: rotate(45deg) translate(.3rem, .45rem);
+}
+
+.show-menu #line2{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show-menu #line3{
+  transform: rotate(-45deg) translate(-.3rem, -.45rem);
+}

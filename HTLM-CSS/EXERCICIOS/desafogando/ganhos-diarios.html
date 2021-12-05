@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganhos diarios</title>
+    <link rel="stylesheet" href="desafogando.css">
+</head>
+<body onload="initTime();">
+    <header>
+        <nav>
+          <a href="wellcome.html">HOME</a>
+          <div id="alinhamento-header01">
+              <a href="login.html"class="alinhamento-header">LOGIN</a>
+              <a href="#sobre"class="alinhamento-header">SOBRE</a>
+              <a href="contato.html" class="alinhamento-header">CONTATO</a>
+          </div>
+      </nav>
+      </header>
+    <main>
+        <section>
+            <div class="alinhamento-timer">
+                <h1>Conte-me com o que você ganhou hoje.</h1><span id="timer">horas</span>
+              </div>
+              <div id="ajustando-os-ganhos">
+                <p>Coloque 1 ganho por vez.</p>
+                <input type="text" name="gasto-diario" id="ganho-diario" placeholder="com:">
+                
+                <input type="number" name="valor" id="valor-ganho" placeholder="valor:">
+                
+        
+                <input type="button" value="Enviar" onclick="enviaralertas()" id="send-valor-ganho"> 
+                <br>
+                
+                <div id="show-tabela">
+                  <hr>
+                  <p name="Ganhos" id="ganhos-tabela" size="10">
+                    <option id="show-ganhos">Ganhos:</option>
+                  </p> 
+                  <hr>
+        
+                  <p name="valor" id="valor-ganhos" size="10">
+                    <option id="show-valor-ganho">Valor: </option>
+                  </p> 
+                  <hr>
+                  
+                  <p name="soma total" id="soma-ganhos" size="10">
+                    <option id="show-total-ganho">total:</option>
+                  </p>
+                  <hr>
+                  
+              </div>
+              
+              <h2>Selecione a data que deseja saber com o que foi gasto.</h2>
+
+                <input id="date-ganho" type="date" >
+
+              </div>
+              </div>
+
+        </section>
+    </main>
+    <script src="desafogando.js"></script>
+</body>
+</html>
