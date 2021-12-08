@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes sociais</title>
+    <link rel="shortcut icon" href="imagens/curriculo-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="nomalize.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body{
+            background-color: #9ca4a7;
+            background:no-repeat url(imagens/montanhas.jpg);
+            background-position: center;
+            background-attachment: fixed;   
+            background-size: cover;         
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        #social-media{
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            margin-top: 10%;       
+        }
+        img{
+            width: 100px;
+            opacity: 0.8;
+            padding-bottom: 5px;
+        }
+        img:hover{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        #pix{
+            padding-top: 10px;
+        }
+        #pix:hover strong{
+            display:block;
+        }
+        #pix:hover{
+
+            text-align: center;
+        }
+        strong{
+            display: none;
+        }
+        p{
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+        <nav>
+            <a href="index.html"><p>home</p></a>
+        </nav>
+
+
+        <div id="social-media">
+                        
+            <a href="https://www.facebook.com/guilhermeapgap/" target="_blank"><img src="imagens/facebook.png" alt="facebook"></a>
+            <a href="http://api.whatsapp.com/send?phone=5561991823714"target="_blank"><img src="imagens/whatsapp-icon.png" alt="whatsapp" ></a>
+            <a href="https://www.linkedin.com/in/guilherme-augusto-60892720b/"target="_blank"><img src="imagens/linkedin.png" alt="linkedin" ></a>
+            <a href="https://github.com/guilhermeapgap"target="_blank"><img src="imagens/github.png" alt="github" ></a>
+            <div id="pix">
+                <img src="imagens/pix.png" alt="pix">
+                <strong>guilhermeapgap@hotmail.com</strong>
+            </div>
+        </div>
+        
+</body>
+</html>
