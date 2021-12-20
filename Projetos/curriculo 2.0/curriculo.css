@@ -1,0 +1,72 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    animation: degrade 5s ease alternate infinite ;
+    background: linear-gradient(-45deg,#e8f1f273,#1b98e0,#247ba0,#006494,#13293d );
+    background-size: 300% 300%;
+    background-color:var(--azul-verdeado) ;
+    background-repeat: no-repeat;
+    height: 90vh;
+    overflow-x: hidden;
+    text-align: center;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.205);
+}
+
+a{
+    color: white;
+    padding: 5px;
+}
+
+.foto-guilherme{
+    width: 300px;
+    border-radius: 50%;
+    border: solid 4px rgba(255, 255, 255, 0.404);
+    box-shadow:0px 0px 20px 2px rgba(255, 255, 255, 0.493);
+}
+.pop-animacao{
+    animation: pop 1s ease-in alternate infinite;
+    margin: -180px 29vw;
+    padding: 10px;
+    border-radius: 15px;
+    height: 65px;
+    width: 140px;
+    background: rgba(255, 255, 255, 0.205);
+}
+/*
+Animações
+-----------
+*/
+
+@keyframes degrade {
+    from{  
+        background-position: 0% 50%;     
+    }
+    to{
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes pop {
+    to{transform: translateY(15px);}
+}
+
+/*
+Responsividade @media
+-----------------------
+*/
+
+@media (max-width: 1400px) {
+    .pop-animacao{
+        margin: 20px auto;
+    }
+}
