@@ -2,46 +2,83 @@
     padding: 0px;
     margin: 0px;
 }
-
+body{
+    display: block;
+}
 header {
     animation: degrade 5s ease alternate infinite ;
-    background: linear-gradient(-45deg,#e8f1f273,#1b98e0,#247ba0,#006494,#13293d );
+    background: linear-gradient(45deg,
+    #003761, #3EA9FA, #a000e0, #437ca8, #83d4fa);    
     background-size: 300% 300%;
     background-color:var(--azul-verdeado) ;
     background-repeat: no-repeat;
     height: 90vh;
     overflow-x: hidden;
-    text-align: center;
-    
+    text-align: center; 
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.205);
+ .display-h{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 80vh;
+ }
+ .text-claro-h1{
+    color: white;
+    font-size: 5vw;
+    margin-bottom: 20px;
+    margin-top: 120px;
+ }
+ .text-claro-h2{
+    color: rgba(255, 255, 255, 0.404);
+    font-size: 2.5vw;
+    margin-bottom: 20px;
 }
-
+.text-claro-h3{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5vw;
+}
+.text-claro-h3:hover{
+    color: white;
+    text-decoration: underline;
+}
 a{
     color: white;
     padding: 5px;
 }
+
 
 .foto-guilherme{
     width: 300px;
     border-radius: 50%;
     border: solid 4px rgba(255, 255, 255, 0.404);
     box-shadow:0px 0px 20px 2px rgba(255, 255, 255, 0.493);
+    margin-bottom: 40px;
+
+}
+.icon-pq{
+    width: 30px;
 }
 .pop-animacao{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:15px ;
+    font-weight: 800 ;
     animation: pop 1s ease-in alternate infinite;
-    margin: -180px 29vw;
+    margin: -220px 29vw;
     padding: 10px;
     border-radius: 15px;
     height: 65px;
-    width: 140px;
+    width: 170px;
     background: rgba(255, 255, 255, 0.205);
 }
+
+
+.space-nav {
+    background: #13293d6e !important ;
+    margin-bottom: 25px;
+}
+
+
 /*
 Animações
 -----------
@@ -65,8 +102,155 @@ Responsividade @media
 -----------------------
 */
 
-@media (max-width: 1400px) {
+@media (max-width: 1560px) {
     .pop-animacao{
-        margin: 20px auto;
+       margin:-220px 20vw; 
     }
+
+}
+@media (max-width: 1100px) {
+    .pop-animacao{
+       margin:-220px 10vw; 
+    }
+}
+@media (max-width: 830px) {
+    .pop-animacao{
+        margin: -20px auto 20px auto;
+    }
+    .display-h{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 22vh;
+    }
+    .text-claro-h1{
+        margin-top: 0px;
+        font-size: 8.5vw;
+    }
+    .text-claro-h2{
+        font-size: 5vw;
+    }
+    .text-claro-h3{
+        font-size: 3vw;
+    }
+}
+@media (min-width:1960px) {
+    header{
+        height: 100vh;
+    }
+    .display-h{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+    }
+    .text-claro-h1{
+        font-size: 6em;
+    }
+    .text-claro-h2{
+        font-size: 4em;
+    }
+    .text-claro-h3{
+        font-size: 3em;
+    }
+}
+@media (max-height:750px) {
+    .display-h{
+        display: none;
+    }
+    .pop-animacao{
+        margin: -20px auto 20px auto;
+    }
+}
+
+
+/*frase*/
+.sec-dark-01{
+    text-align: center;
+    background: #13293d ;
+    height:98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase-str{
+    color: rgba(255, 255, 255, 0.363);
+}
+.frase-motivacao{
+    max-width: 900px;
+    font-size: 5vw;
+    color: white;
+}
+.letra-colorida{
+    background-color: #f3ec78;
+    background: linear-gradient(90deg, blue,#a000e0, #c779d0,#437ca8, #13293d);
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 4s ease alternate infinite;
+    height: fit-content;
+    font-size: 5vw;
+    max-width: 900px;
+    padding-bottom: 4px;
+
+}
+
+/*animações*/
+
+@keyframes rainbow {
+    from{  
+        background-position: 0% 50%;     
+    }
+    to{
+        background-position: 100% 50%;
+    }
+}
+@media (max-width:1100px) {
+    .frase-motivacao{
+        font-size: 10vw;
+        padding: 0px 25px;
+    }
+    .letra-colorida{
+        font-size: 10vw;
+        margin-bottom: 40px;
+        padding: 0px 25px;
+    }  
+   
+}
+/*My services*/
+
+/*My projects*/
+
+/*About me*/
+.sobre-mim{
+    font-family:a'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: rgb(0, 255, 136);
+    text-align: center;
+}
+.sec-dark-04{
+    display: flex;
+    flex-direction: column;
+    background: #13293d ;
+    height:98vh;
+}
+.titulo-sobremim{
+    color: white;
+}
+
+.education{
+    display: inline-block;
+    background-image: linear-gradient(to right,rebeccapurple , steelblue , turquoise );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+.textos{
+    color: white;
 }
