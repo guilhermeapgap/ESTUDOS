@@ -7,14 +7,14 @@
     <title>Guilherme Augusto pereira</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="curriculo.css">
-    
+    <link rel="stylesheet" href="nomalize.css">
 </head>
 <body>
     <header>
             <!-----------------------
                navegação hamburquer
             ------------------------->
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark space-nav">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark space-nav fixed-top">
         
                 <!-- Logo -->
                 <a href="index.html" class="navbar-brand">Guilherme Augusto pereira</a>
@@ -29,16 +29,16 @@
                 <div class="collapse navbar-collapse" id="navegacao">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item ">
-                            <a href="" class="nav-link text-light">Serviços</a>
+                            <a href="#servicos" class="nav-link text-light">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link text-light">Projetos</a>
+                            <a href="#projetos" class="nav-link text-light">Projetos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link text-light">sobre mim</a>
+                            <a href="#sobre" class="nav-link text-light">sobre mim</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link text-light">Contato</a>
+                            <a href="contato.html" class="nav-link text-light">Contato</a>
                         </li>
 
                     </ul>
@@ -57,9 +57,11 @@
         <div class="pop-animacao" > Olá! <img src="Imgagens/hand-icon.png" alt="hand-icon" class="icon-pq"> <br> Eu sou  Guilherme</div>
 
         <div class="display-h">
-            <h1 class="text-claro-h1">Front-End Developer</h1>
-            <h2 class="text-claro-h2">Localizado no, Brasil.</h2>
-            <a href="contato.html"class="text-claro-h3">Solicitar trabalho</a>
+            <div class="center-fix">
+                <h1 class="text-claro-h1">Front-End Developer</h1>
+                <h2 class="text-claro-h2">Localizado no, Brasil.</h2>
+            </div>
+            <div class="end-fix"><a href="contato.html"class="text-claro-h3">Solicitar trabalho</a></div>
         </div>
     </header>
     <main>
@@ -67,7 +69,7 @@
         <!--frase-->
 
         
-        <section class="sec-dark-01">
+        <section class="sec-dark-01" id="servicos">
             <div class="container-frase">
                 <div>
                     <h2 class="frase-motivacao">Não é a linguagem de programação que define o programador,</h2><h2 class="letra-colorida">mas sim sua lógica.</h2>
@@ -78,35 +80,60 @@
            
         </section>    
             <!--My services-->
-       <!-- <section class="sec-dark-04">
+        <section class="sec-dark-02">
 
-            <div>
+            
+            <div class="sevices-fix">
+                <div class="serv-fix" >
                 <h2> Meus Serviços</h2>
                 <p>The most creative intuitive workmate.</p>
-            </div>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
+                </div>
+                <div class="box-fix">
+                    <div class="box-style-00">
+                        <div class="org-row">
+                            <img src="Imgagens/python-icon.png" alt="ico" class="icon-pq animacao-360">
+                            <h3>Developer Skills</h3>
+                        </div>
+                    <p>A full knowledge of HTML / CSS and Javascript. I make responsive applications with Bootstrap and interactive UI's with React.</p>
+                    </div>
+                    <div class="box-style-00"><div class="org-row">
+                        <img src="Imgagens/work-fixing-04.png" alt="work" class="icon-work animacao-180">
+                        <h3>Manutenção</h3>
+                    </div>
+                    <p>A love for design and a good eye for creativity. I have proficiency in wireframing, color theory and visual communication.</p>
+                    </div>
+                    <!---<div class="box-style-00"><h3> 2D Artist</h3><p>5+ years of digital illustration experience, mastering techniques in Photoshop and Procreate.</p>
+                    </div>-->
+                </div>
             </div>
             
 
-        </section>-->
+        </section>
   
             <!--My projects-->
+            <section class="sec-dark-03" id="projetos">
+                <h2>Meus projetos</h2>
+                <h3> A selection of my best projects. </h3>
 
+                <div> 
+                    <a href="https://brave-yonath-e4064d.netlify.app "target="_blank"><img src="Imgagens/desafogando.jpeg" alt="projetos" class="size-projetos"></a>
+                </div>
+
+                <p>Curious about the process?</p>
+                <p>Visit my Github</p>
+            </section>
             <!--About me-->
-            <section class="sec-dark-04">
+            <section class="sec-dark-04" id="sobre">
                 <h2 class="sobre-mim">Sobre nós</h2>
                 <h3 class="titulo-sobremim">Bem vindo ao nosso Mundo</h3>
                 
-                <div >
+                <div class="box-education" >
                     <h3 class="education">Educação</h3>
                     <p class="textos" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aut odit, harum placeat at officia et in iste possimus labore eaque, ab eligendi porro minus. Obcaecati earum fuga quos totam?</p>
                 </div>
 
-                <div class="interests">
-                    <h3>Hobbies e Interesses</h3>
+                <div class="box-hobbies">
+                    <h3 class="hobbies">Hobbies e Interesses</h3>
                     <ul type="disc">
                         <li>Pyton</li>
                         <li>SQL</li>
@@ -115,13 +142,22 @@
                 </div>
 
                 <div>
-                    <h3></h3>
+                    <h3>habilidades</h3>
+                    
                 </div>
                 
             </section>       
 
         
     </main>
+    <footer>
+        <div>
+           <h3>Let's work together!</h3> 
+        </div>
+        <div>
+
+        </div>
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

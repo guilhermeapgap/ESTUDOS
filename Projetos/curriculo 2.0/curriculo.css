@@ -1,9 +1,18 @@
 *{
     padding: 0px;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 body{
-    display: block;
+    background: #13293d;
+}
+main{
+    margin: auto;
+    max-width: 900px;
+
+}
+p,h1,h2,h3,h4{
+    color: white;
 }
 header {
     animation: degrade 5s ease alternate infinite ;
@@ -12,22 +21,16 @@ header {
     background-size: 300% 300%;
     background-color:var(--azul-verdeado) ;
     background-repeat: no-repeat;
-    height: 90vh;
     overflow-x: hidden;
     text-align: center; 
 }
- .display-h{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     height: 80vh;
- }
+
+
  .text-claro-h1{
     color: white;
     font-size: 5vw;
     margin-bottom: 20px;
-    margin-top: 120px;
+    margin-top: 50px;
  }
  .text-claro-h2{
     color: rgba(255, 255, 255, 0.404);
@@ -53,11 +56,14 @@ a{
     border-radius: 50%;
     border: solid 4px rgba(255, 255, 255, 0.404);
     box-shadow:0px 0px 20px 2px rgba(255, 255, 255, 0.493);
-    margin-bottom: 40px;
+    margin: 80px 0px;
+    
 
 }
 .icon-pq{
     width: 30px;
+    height: 30px;
+    margin: 2px
 }
 .pop-animacao{
     font-family: 'Courier New', Courier, monospace;
@@ -76,6 +82,19 @@ a{
 .space-nav {
     background: #13293d6e !important ;
     margin-bottom: 25px;
+}
+.center-fix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+}
+.end-fix{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
 }
 
 
@@ -119,31 +138,22 @@ Responsividade @media
     }
     .display-h{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 22vh;
+        flex-direction: column;
+        height: 30vh;
     }
     .text-claro-h1{
         margin-top: 0px;
-        font-size: 8.5vw;
+        font-size: 5vw;
     }
     .text-claro-h2{
-        font-size: 5vw;
+        font-size: 2,5vw;
     }
     .text-claro-h3{
         font-size: 3vw;
     }
 }
 @media (min-width:1960px) {
-    header{
-        height: 100vh;
-    }
-    .display-h{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 120vh;
-    }
+
     .text-claro-h1{
         font-size: 6em;
     }
@@ -154,10 +164,8 @@ Responsividade @media
         font-size: 3em;
     }
 }
-@media (max-height:750px) {
-    .display-h{
-        display: none;
-    }
+@media (max-height:900px) {
+
     .pop-animacao{
         margin: -20px auto 20px auto;
     }
@@ -168,23 +176,25 @@ Responsividade @media
 .sec-dark-01{
     text-align: center;
     background: #13293d ;
-    height:98vh;
+    height:98%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
 .frase-str{
     color: rgba(255, 255, 255, 0.363);
 }
 .frase-motivacao{
+    display:block;
     max-width: 900px;
     font-size: 5vw;
     color: white;
 }
 .letra-colorida{
     background-color: #f3ec78;
-    background: linear-gradient(90deg, blue,#a000e0, #c779d0,#437ca8, #13293d);
+    background: linear-gradient(90deg, blue,#a000e0, #c779d0,#437ca8, #13293d,#a000e0);
     background-size: 400% 400%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -194,7 +204,7 @@ Responsividade @media
     height: fit-content;
     font-size: 5vw;
     max-width: 900px;
-    padding-bottom: 4px;
+    padding-bottom: 4px !important;
 
 }
 
@@ -208,10 +218,16 @@ Responsividade @media
         background-position: 100% 50%;
     }
 }
+
+/*
+Responsividade @media
+-----------------------
+*/
 @media (max-width:1100px) {
     .frase-motivacao{
         font-size: 10vw;
         padding: 0px 25px;
+        
     }
     .letra-colorida{
         font-size: 10vw;
@@ -221,27 +237,99 @@ Responsividade @media
    
 }
 /*My services*/
+.sec-dark-02{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    max-width: 900px;
+}
+.box-style-00{
+    background: rgba(128, 128, 128, 0.178);
+    margin: 20px 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    max-width: 300px;
+}
+.serv-fix{
+    text-align: center;
+    margin: 0px 10px 20px 10px;
+}
+.box-fix{
+    display: flex;
+}
+.org-row{
+    display: flex;
+}
+
+.animacao-360{
+    animation: girapython 3s linear  infinite;
+    
+}
+
+@media (max-width:710px) {
+    .box-fix{
+        display: block;
+    }
+}
+
+@keyframes girapython {
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.animacao-180{
+    animation: girafixing 3s ease-in  alternate infinite;
+}
+
+.icon-work{
+    width: 80px;
+    margin-left: -20px;
+}
+
+@keyframes girafixing {
+    to{
+        transform: rotate(40deg);
+    }
+}
 
 /*My projects*/
-
+.sec-dark-03{
+    padding-top: 50px;
+    max-width: 900px;
+    text-align: center;
+}
+.size-projetos{
+    max-width: 400px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.size-projetos:hover{
+    transform: scaleZ();
+}
 /*About me*/
+.sec-dark-04{
+    display: flex;
+    flex-direction: column;
+    height:98vh;
+    max-width: 900px;
+}
 .sobre-mim{
     font-family:a'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     color: rgb(0, 255, 136);
     text-align: center;
 }
-.sec-dark-04{
-    display: flex;
-    flex-direction: column;
-    background: #13293d ;
-    height:98vh;
-}
+
 .titulo-sobremim{
     color: white;
 }
 
+.box-education{
+    
+}
+
 .education{
-    display: inline-block;
+    /*display: inline-block;
     background-image: linear-gradient(to right,rebeccapurple , steelblue , turquoise );
     background-clip: text;
     -webkit-background-clip: text;
@@ -249,8 +337,30 @@ Responsividade @media
     color: black;
     font-size: 2rem;
     font-weight: bold;
-    line-height: 1.1;
+    line-height: 1.1;*/
+    color: #fff;
+  text-shadow:
+    0 0 6px #fff,
+    0 0 9px #fff,
+    0 0 20px #fff,
+    0 0 40px #0fa,
+    0 0 80px #0fa,
+    0 0 90px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
 }
 .textos{
     color: white;
+}
+
+.hobbies {
+    display: inline-block;
+    background-image: linear-gradient(to right,rgb(228, 214, 20) , rgb(174, 255, 13) , rgb(43, 255, 0) );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
 }
