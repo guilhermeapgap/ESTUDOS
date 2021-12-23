@@ -1,3 +1,7 @@
+:root{
+    --size-h3-grande: 6rem;
+    --font-pricipal:'Poppins', sans-serif;
+}
 *{
     padding: 0px;
     margin: 0px;
@@ -8,7 +12,7 @@ body{
 }
 main{
     margin: auto;
-    max-width: 900px;
+    max-width: 1200px;
 
 }
 p,h1,h2,h3,h4{
@@ -241,7 +245,7 @@ Responsividade @media
     display: flex;
     justify-content: center;
     padding-top: 50px;
-    max-width: 900px;
+    max-width: 1200px;
 }
 .box-style-00{
     background: rgba(128, 128, 128, 0.178);
@@ -296,23 +300,24 @@ Responsividade @media
 /*My projects*/
 .sec-dark-03{
     padding-top: 50px;
-    max-width: 900px;
+    max-width: 1200px;
     text-align: center;
 }
 .size-projetos{
-    max-width: 400px;
+    max-width: 350px;
+    margin: 10px;
     border-radius: 20px;
     transition: 1s;
 }
 .size-projetos:hover{
-    transform: scaleZ();
+    transform: scale(1.1);
 }
 /*About me*/
 .sec-dark-04{
     display: flex;
     flex-direction: column;
     height:98vh;
-    max-width: 900px;
+    max-width: 1200px;
 }
 .sobre-mim{
     font-family:a'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
@@ -324,9 +329,9 @@ Responsividade @media
     color: white;
 }
 
-.box-education{
+/*.box-education{
     
-}
+}*/
 
 .education{
     /*display: inline-block;
@@ -363,4 +368,54 @@ Responsividade @media
     font-size: 2rem;
     font-weight: bold;
     line-height: 1.1;
+}
+
+/*Footer
+----------*/
+footer{
+    background: #334557;
+    box-shadow: 0px -20px 40px 10px #334557;
+}
+.org-footer{
+    max-width: 1200px;
+    margin: auto;
+    height: 700px; text-align: center;
+}
+.lets-work{
+    margin: auto;
+    padding-top: 80px;
+    height: 50%;
+    font-size: var(--size-h3-grande);
+}
+.btn-perso-01{
+    width: 200px;
+    height: 70px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 20px -10px black;
+    transition: 1s;
+}
+
+.btn-perso-01:hover{
+    transform: translateY(-10px);
+    box-shadow:0px 0px 50px -5px #a000e0;
+    background: #a000e06b;
+}
+.a-perso-01{
+    text-decoration: none !important;
+    color: white !important;
+}
+@media (max-width:1200px) {
+    .lets-work{
+        padding-top: 40px;
+        height: 80%;
+    }
+}
+@media (max-height:700px) {
+    .lets-work{
+        padding-top: 10px;
+        height: 65%;
+    }
 }
