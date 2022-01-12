@@ -118,6 +118,9 @@ input {
 .color-menu> #timer{
     color: var(--braco-acinzentado);
 }
+.space-nav{
+    background: #13293d59!important;
+}
 /*pagina index*/
 @keyframes pgindex{
     from{  
@@ -127,7 +130,9 @@ input {
         background-position: 100% 50%;
     }
 }
-
+.font-grande-h{
+    font-size: 8vw;
+}
 #body-index{
     animation: pgindex 20s ease alternate infinite ;
     background: linear-gradient(-45deg,#e8f1f273,#1b98e0,#247ba0,#006494,#13293d );
