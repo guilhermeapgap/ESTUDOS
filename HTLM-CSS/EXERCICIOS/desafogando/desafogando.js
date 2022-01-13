@@ -37,8 +37,17 @@ function ganhosim(){
 
 //abrindo a pagina do gasto diario
 function gastosim(){
-  var site = window.open('gasto-diario.html', '_self')
+  window.open('gasto-diario.html', '_self')
+
 }
+
+//abrindo a pagina index em entrar
+
+function openIndex(){
+    window.open("wellcome.html", "_self");
+
+}
+
 //quando nn foi feito nenhum gasto 
 function naogasto(){
   window.alert('PARABÉNS!!! continue assim.')
@@ -89,6 +98,7 @@ function showTime(){
 function initTime(){
     setInterval (showTime, 1000);
 }
+
 
 /*Calculo dos produtos
 function enviarprodutos() {

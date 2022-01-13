@@ -10,18 +10,38 @@
     <link rel="stylesheet" href="desafogando.css">
 
 </head>
+
 <body id="body-index" onload="initTime();data();saldo();">
-    <header>
-        <nav>
-            <a href="index.html">HOME</a>
-            <div id="alinhamento-header01">
-                <a href="login.html"class="alinhamento-header">LOGIN</a>
-                <a href="#sobre"class="alinhamento-header">SOBRE</a>
-                <a href="contato.html" class="alinhamento-header">CONTATO</a>
-            </div>
-        </nav>
+    <header>   
+        <!-----------------------
+    navegação hamburquer
+        ------------------------->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark space-nav fixed-top">
+
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand">HOME</a>
+
+        <!-- Menu Hamburguer -->
+        <button class="navbar-toggler" data-toggle="collapse" 
+        data-target="#navegacao">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navegacao -->
+        <div class="collapse navbar-collapse" id="navegacao">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#sobre" class="nav-link text-light">SOBRE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contato.html" class="nav-link text-light">CONTATO</a>
+                </li>
+            </ul>
+        </div>                   
+    </nav>             
     </header>
-    <main>
+
+    <main class="main-config">
         <section>
             <div class="alinhamento-timer">
                 

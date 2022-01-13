@@ -54,7 +54,7 @@ nav{
     font-size: 1.5em;
 }
 a{
-    color: var(--braco-acinzentado);
+    color: var(--braco-acinzentado) !important;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -121,6 +121,11 @@ input {
 .space-nav{
     background: #13293d59!important;
 }
+
+.main-config{
+    margin-top: 60px;
+}
+
 /*pagina index*/
 @keyframes pgindex{
     from{  
@@ -147,7 +152,7 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vmin;
+    height: 80vh;
     
 }
 #wellcome{
@@ -211,6 +216,20 @@ article > #sobre{
 #sobre{
     background-color: var(--braco-acinzentado);
 }
+
+ @media (max-width:800px){
+    a:hover{
+        transform: scale(1.02) !important;
+    }
+    a{
+        color: var(--braco-acinzentado)!important;
+    }
+
+    h1{
+        font-size: 2.5em !important;
+    }
+}
+
 
 /*Pagina principal*/
 #saldo-diario > h2{

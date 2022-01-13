@@ -23,21 +23,39 @@
     <main>
         <section>
             <h1 id="ajustelogin">Faça seu login para ter todos os beneficios do site</h1>
-            
-            <div id="ajustando-login">
-                <label for="fullname">Nome:</label>
-                <input type="text" name="fullname" id="fullname">
-                <label for="email">email:</label>
-                <input type="email" name="email" id="email">
-                <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha">
-                <label for="confirm">Confirmar senha:</label>
-                <input type="password" name="senha"
-                id="confirm-senha">
-                <a href="wellcome.html" id="botao-login">entrar</a>
-            </div>
-        </section>
-        <a href="intro.html" class="link-saiba-mais"><p class="link-saiba-mais">Saiba mais</p></a>
+
+            <form>
+                <div class="row"> 
+                  <div class="col">
+                    <label for="exampleInputEmail1">Nome</label>
+                    <input type="text" class="form-control" placeholder="Nome">
+                  </div>
+                  
+                  <div class="col">
+                    <label for="exampleInputEmail1">Sobrenome</label>
+                    <input type="text" class="form-control" placeholder="Sobrenome">
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Endereço de email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ex:(user@logoin.com)">
+                    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Repita sua senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repita sua senha">
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+                  </div>
+                  <input type="button" class="btn btn-primary"value="Entrar" onclick="openIndex()">
+              </form>
+
     </main>
     <footer> Feito por Guilherme e Gabriel</footer>
     <script src="desafogando.js"></script>
