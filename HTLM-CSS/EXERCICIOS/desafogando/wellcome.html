@@ -48,7 +48,6 @@
                 <span id="timer" >horas</span>
 
             </div>
-                
 
                 <div class="d-sm-flex justify-content-sm-between">
 
@@ -69,6 +68,71 @@
                     </div>
                 </div>
 
+<!-- teste -->
+
+<!-- Botão para acionar modal -->
+
+<input type="radio" name="modal" id="myRadioModal" value="Sim" data-toggle="modal" data-target="#ExemploModalCentralizado"> Sim
+  
+  <!-- Modal -->
+  <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Conte-me com o que você gastou hoje.</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <section>
+
+                  
+                <div id="ajuste">
+  
+                  <p>Coloque 1 gasto por vez.</p>
+                  <input type="text" name="gasto-diario" id="gasto-diario" placeholder="com:">
+                  
+                  <input type="number" name="valor" id="valor-gasto" placeholder="valor:">
+                  
+          
+                  <input type="button" value="Enviar" onclick="enviaralertas()" id="send-valor"> 
+                  <br>
+                  
+                  <div id="show-tabela">
+                    <hr>
+                    <p name="gastos" id="gastos-tabela" size="10">
+                      <option id="show-gastos">Gastos:</option>
+                    </p> 
+                    <hr>
+          
+                    <p name="valor" id="preco" size="10">
+                      <option id="show-preços">preço: </option>
+                    </p> 
+                    <hr>
+                    
+                    <p name="soma total" id="soma-total" size="10">
+                      <option id="show-total">total :</option>
+                    </p>
+                    <hr>
+                    
+                </div>
+                <h2>Selecione a data que deseja saber com o que foi gasto.</h2>
+                  <input id="date" type="date">
+                </div>
+          
+                </section>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Salvar mudanças</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- teste -->
             <div id="saldo-diario">
                 <h2>Saldo Disponível de: <span id="saldo-disponivel">00</span> para hoje: <span id="data-site">DATA</span></h2> 
                 <p>caso seu gasto diario for maior que seu saldo disponível, o saldos dos proximos dias seram recalculados.</p>

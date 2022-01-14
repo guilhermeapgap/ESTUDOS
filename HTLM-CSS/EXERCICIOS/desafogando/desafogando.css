@@ -389,11 +389,6 @@ article > #sobre{
 
 /*Pagina de contatos*/
 
-#lista-contatos{
-    display: flex;
-    justify-content: space-around;
-
-}
 #centralizar-sugestao{
     display: flex;
     flex-direction: column;
