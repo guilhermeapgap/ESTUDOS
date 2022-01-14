@@ -43,21 +43,31 @@
 
     <main class="main-config">
         <section>
-            <div class="alinhamento-timer">
+            <div class="alinhamento-timer d-flex justify-content-sm-center jus  mb-3">
+
+                <span id="timer" >horas</span>
+
+            </div>
                 
-                <h2>Gastou hoje?</h2><span id="timer">horas</span></div>
 
-                <input type="radio" name="chekbox" id="aba-gasto-diario" onclick="gastosim()">
-                <label for="aba-gasto-diario">Sim</label>
-                <input type="radio" name="chekbox" id="chek-nao" onclick="naogasto()">
-                <label for="check-nao">Não</label checked>
+                <div class="d-sm-flex justify-content-sm-between">
 
-                <h2>Recebeu hoje?</h2>
+                    <div>
+                        <h2>Gastou hoje?</h2>
+                        <input type="radio" name="chekbox" id="aba-gasto-diario" onclick="gastosim()">
+                        <label for="aba-gasto-diario">Sim</label>
+                        <input type="radio" name="chekbox" id="chek-nao" onclick="naogasto()">
+                        <label for="check-nao">Não</label checked>
+                    </div>
 
-                <input type="radio" name="chekbox" id="aba-ganha-diario" onclick="ganhosim()">
-                <label for="aba-ganho-diario">Sim</label>
-                <input type="radio" name="chekbox" id="chek-nao" onclick="naoganho()">
-                <label for="check-nao">Não</label checked>
+                    <div>
+                        <h2>Recebeu hoje?</h2>
+                        <input type="radio" name="chekbox" id="aba-ganha-diario" onclick="ganhosim()">
+                        <label for="aba-ganho-diario">Sim</label>
+                        <input type="radio" name="chekbox" id="chek-nao" onclick="naoganho()">
+                        <label for="check-nao">Não</label checked>
+                    </div>
+                </div>
 
             <div id="saldo-diario">
                 <h2>Saldo Disponível de: <span id="saldo-disponivel">00</span> para hoje: <span id="data-site">DATA</span></h2> 
@@ -67,20 +77,17 @@
                 <h2>Dividas dos proximos meses</h2>
                 <input type="month" name="mes" id="calendario-mes">    
             </div>
-            <h2>Dicas</h2>
-            <ul>
 
-                <li>Se for necessário usar o cartão de credito quanto menos parcelas melhor, más sempre dentro do saldo disponível.</li>
 
-                <li>Importante colocar todos os gastos com valor correto e diariamente para recalcularmos suas divídas.</li>
+            <h2 class="d-flex justify-content-center mt-5">Dicas</h2>
 
-                <li>caso todo seu salário ou mais estaja comprometido tente parcelar seu cartão.</li>
-
-                <li>Usar cartão de crédito apenas em últimmo caso.</li>
-
-                <li>Focar em gastar apenas no debíto.</li>
-
-            </ul>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Se for necessário usar o cartão de credito quanto menos parcelas melhor, más sempre dentro do saldo disponível.</li>
+                <li class="list-group-item">Importante colocar todos os gastos com valor correto e diariamente para recalcularmos suas divídas.</li>
+                <li class="list-group-item">caso todo seu salário ou mais estaja comprometido tente parcelar seu cartão.</li>
+                <li class="list-group-item">Usar cartão de crédito apenas em últimmo caso.</li>
+                <li class="list-group-item">Focar em gastar apenas no debíto.</li>
+              </ul>
              <a href="index.html" id="icon-back"><img src="imagens/back-arrow-1767515-1502579.png" alt="back"></a>
         </section>
     </main>

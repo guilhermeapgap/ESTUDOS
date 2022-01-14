@@ -60,8 +60,6 @@ a{
 }
 a:hover{
     transform: scale(1.2);
-    text-shadow: 5px 5px 10px rgba(99, 65, 65, 0.521);
-
 }
 
 main{
@@ -163,7 +161,23 @@ input {
 
 }
 #shadow-h1{
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+    text-shadow: -4px 4px 10px rgba(150, 150, 150, 0.5);
+    background: linear-gradient(45deg,var(--azul-verdeado),var(--azul-claro),#dedefc,#e3e8fc,#fcf7fa,#CCCEFD,#FCE4E3,var(--azul-claro),rgba(0, 0, 255, 0.459));
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bg-animado-letra 10s ease infinite alternate;
+
+}
+@keyframes bg-animado-letra {
+    from{  
+        background-position: 0% 50%;     
+    }
+    to{
+        background-position: 100% 50%;
+    }
 }
 
 a>#entrar-wellcome{
@@ -226,12 +240,18 @@ article > #sobre{
     }
 
     h1{
-        font-size: 2.5em !important;
+        font-size: 3em !important;
+    }
+}
+@media (max-width:600px){
+    h1{
+        font-size: 2em !important;
     }
 }
 
 
 /*Pagina principal*/
+
 #saldo-diario > h2{
     padding-top: 50px;
 }
@@ -241,6 +261,7 @@ article > #sobre{
 #calendario-mes{
     border-radius: 5px;
     transition: 0.2s;
+    height: 30px;
 }
 #calendario-mes:hover{
     transform: scale(1.05);
@@ -363,31 +384,8 @@ article > #sobre{
     border-radius: 5px;
     margin-bottom: 20px;
 }
-.link-saiba-mais{
-    padding-top: 20px;
-    text-align: center;
-    color: var(--azul-claro);
-    text-decoration: underline;
-    
-   
-    
-}
-.link-saiba-mais:hover{
-    font-weight: bold;
-    box-shadow: none;
-}
 
-#botao-login{
-    text-align: center;
-    background-color: var(--azul-escuro);
-    width: 90px;
-    padding: 4px;
-    border-radius: 5px;
-    
-}
-#botao-login:hover{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
-}
+
 
 /*Pagina de contatos*/
 
