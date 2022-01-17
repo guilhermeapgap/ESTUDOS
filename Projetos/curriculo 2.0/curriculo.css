@@ -7,9 +7,7 @@
     margin: 0px;
     scroll-behavior: smooth;
 }
-body{
-    background: #13293d;
-}
+
 main{
     margin: auto;
     max-width: 1200px;
@@ -27,6 +25,7 @@ header {
     background-repeat: no-repeat;
     overflow-x: hidden;
     text-align: center; 
+    
 }
 
 
