@@ -65,7 +65,7 @@
 <!-- teste -->
 <!-- Botão para acionar modal -->
 
-<input type="radio" name="modal" id="myRadioModal" value="Sim" data-toggle="modal" data-target="#ExemploModalCentralizado"> Sim
+<input type="radio" name="chekboxspend" id="myRadioModal" value="Sim" data-toggle="modal" data-target="#ExemploModalCentralizado"> Sim
   
   <!-- Modal -->
   <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
@@ -125,7 +125,7 @@
     </div>
   </div>
 
-  <input type="radio" name="chekbox" id="chek-nao" onclick="naogasto()">
+  <input type="radio" name="chekboxspend" id="chek-nao" onclick="naogasto()">
   <label for="check-nao">Não</label checked> 
 
 <!-- teste -->
@@ -144,14 +144,14 @@
     <!-- teste -->
 <!-- Botão para acionar modal -->
 
-<input type="radio" name="modal" id="myRadioModal" value="Sim" data-toggle="modal" data-target="#ExemploModalCentralizado"> Sim
+<input type="radio" name="chekboxwon" id="myRadioModal" value="Sim" data-toggle="modal" data-target="#ModalRecebidos"> Sim
   
 <!-- Modal -->
-<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+ <div class="modal fade" id="ModalRecebidos" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="TituloModalCentralizado">Conte-me com o que você gastou hoje.</h5>
+        <h5 class="modal-title" id="TituloModalCentralizado">Conte-me quais são seus ganhos de hoje.</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -163,7 +163,7 @@
       
               <div id="ajuste">
 
-                <p>Coloque 1 gasto por vez.</p>
+                <p>Coloque 1 item por vez.</p>
                 <input type="text" name="gasto-diario" id="gasto-diario" placeholder="com:">
                 
                 <input type="number" name="valor" id="valor-gasto" placeholder="valor:">
@@ -175,22 +175,22 @@
                 <div id="show-tabela">
                   <hr>
                   <p name="gastos" id="gastos-tabela" size="10">
-                    <option id="show-gastos">Gastos:</option>
+                    <option id="show-gastos">Ganhos:</option>
                   </p> 
                   <hr>
         
                   <p name="valor" id="preco" size="10">
-                    <option id="show-preços">preço: </option>
+                    <option id="show-preços">Valor: </option>
                   </p> 
                   <hr>
                   
                   <p name="soma total" id="soma-total" size="10">
-                    <option id="show-total">total :</option>
+                    <option id="show-total">Total :</option>
                   </p>
                   <hr>
                   
               </div>
-              <h2>Selecione a data que deseja saber com o que foi gasto.</h2>
+              <h2>Selecione a data que deseja saber com o que foi ganho.</h2>
                 <input id="date" type="date">
               </div>
         
@@ -205,7 +205,7 @@
 </div>
 <!-- teste -->
 
-    <input type="radio" name="chekbox" id="chek-nao" onclick="naoganho()">
+    <input type="radio" name="chekboxwon" id="chek-nao" onclick="naoganho()">
     <label for="check-nao">Não</label checked>
   </div>
 
