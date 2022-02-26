@@ -11,35 +11,35 @@
             height: 100%;
             margin: 0;
             padding: 0;
-            overflow: hidden; 
+            overflow: hidden;
             /*  background: url(image_url_here.jpg);
-            no-repeat center center fixed; 
+            no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover; */
 }
          /*body{
-            background: url(imagens/montanhas.jpg) no-repeat center center fixed; 
+            background: url(imagens/montanhas.jpg) no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
-            background-size: cover; 
-            
+            background-size: cover;
+
         }*/
         body{
-            background: url(imagens/montanhas.jpg);            
+            background: url(imagens/montanhas.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-        
+
 
         /* -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;   */
-        /* 
-            
+        /*
+
              */
         }
         #wrapper {
@@ -112,11 +112,11 @@
             box-shadow:0px -1px 20px 2px rgb(0 0 0 / 34%);
             left: 250px;
             padding: 10px;
-            margin: 0px 15px;
+            margin: 0px 15px ;
             border-radius: 10px;
 
         }
-        
+
         #ajuste-perfil{
             display: flex;
             flex-direction:column ;
@@ -132,7 +132,7 @@
         }
         #ajuste-perfil > p{
             font-size: 1em;
-            text-align: center; 
+            text-align: center;
             padding-top: 5px;
             margin-bottom: 10px;
         }
@@ -161,16 +161,16 @@
         #download-curriculo:hover{
             background-color: #5865FF;
             transform: scale(1.02);
-            
+
         }
-        #download-curriculo>img{           
+        #download-curriculo>img{
             width: 20px;
             height: 20px;
         }
         #download-curriculo>a{
             color: white;
         }
-        ul{ 
+        ul{
             list-style-position: inside;
             }
         .ul-style{
@@ -185,7 +185,7 @@
             text-align: center;
             text-decoration: none;
             padding: 0px;
-            
+
         }
         .link-personalizado{
             font-weight: normal;
@@ -195,14 +195,15 @@
         footer{
             display: flex;
             justify-content: space-around;
-            align-items: center;            
+            align-items: center;
             background-color: fff;
-            text-indent: 150px;
+            text-indent: 150px; 
+            
         }
         #div-footer-name{
             padding-top: 15px;
         }
-        
+
         @media (max-width: 600px) {
 
 
@@ -213,7 +214,7 @@
             #ajuste-perfil{
                 margin: 0px 15px 15px 15px;
                 height: 360px;
-                max-width: 550px; 
+                max-width: 550px;
             }
             #foto-perfil{
                 margin: 0px auto;
@@ -230,7 +231,7 @@
             nav{
                 text-align: center;
             }
-           
+
         }
 
 
@@ -246,19 +247,61 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            
+
             }
-            /* 
-            body{
-            background: url(imagens/montanhas.jpg) no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            } */
         }
         @media (max-width:380px) {
             footer{
                 display: block;
                 }
             }
+
+/* feedback */
+
+
+#btn_feedback{
+    width: 60px;
+    height: 60px;
+    position: fixed !important;
+    right: 55px;
+    bottom: 10px;
+    text-align: center;
+    margin-bottom: 44px;
+    border-radius: 50%;
+}
+
+#btn_feedback:hover{
+    transform: scale(1.1);
+}
+ @media (min-width: 1025px) {
+    #btn_feedback{
+        left: 85%;
+    }
+} 
+@media (min-width: 1290px) {
+    #btn_feedback{
+        left: 80%;
+    }
+}
+ @media (min-width: 1500px) {
+    #btn_feedback{
+        left: auto;
+    }
+}
+@media (max-width: 600px) {
+    #btn_feedback{
+        right: 40px;
+    }
+}
+/*@media (min-width: 2000px) {
+    #btn_feedback{
+        left: 68%;
+    }
+}
+@media (min-width: 2200px) {
+    #btn_feedback{
+        left: 65%;
+    }
+} */
+
+/* feedback */
