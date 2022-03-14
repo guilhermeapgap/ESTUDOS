@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height: 1000vh;
+}
+
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+/* GUILHERME */
+header{
+    padding-top: 20px;
+    background-color: #c00a28;
+    height: 180px;
+    color: white;
+}
+.nav_li{
+    padding: 10px 15px;
+    
+}.nav_p{
+    padding: 10px 15px;
+}
+.nav_logo{
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+    transform: rotate(-20deg);
+    transition: 2s;
+}
+.nav_logo:hover{
+    transform: rotate(-380deg);
+    cursor: pointer;
+
+}
+.a_logo{
+    color: white !important; 
+    text-decoration: none !important;
+}
+.nav_ul{
+    list-style-type: none;
+}
+
+.ul_2{
+    border-top: solid 1px rgba(255, 255, 255, 0.473);
+}
+
+.carousel_imagens{
+    width: 100%;
+}
+
+.nav_telefone{
+    margin: 0px;
+    padding-top: 10px;
+}
+
+
+/* DANIEL */
+
+
+.box_principal{
+    margin: 30px;
+    height: 100vh;
+}
+.box_02{
+    width: 400px;
+}
+
+.img_box1{
+    background: url(Imagens/original.png) no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+
+.img_box2{
+    background: url(Imagens/burgao_daniel.jpg) no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+
+}
+.img_box3{
+    background: url(Imagens/milkShak.jpg) no-repeat;
+    background-size: cover;
+    width: 190px;
+    height: 150px;
+    margin-left: 10px;
+    border-radius: 5px;
+
+}
+.img_box4{
+    background: url(Imagens/tudo].jpg) no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 340px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+/* GABRIEL */
+
+section {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 180px 30%;
+    font-family: 'Zen Old Mincho', serif;
+    color: white;
+    margin-top: 50px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.section-p {
+    background-image: url('Imagens/parallaxpizza.jpg');
+}
+
+
+.section-s {
+    background-image: url('Imagens/mini-parallax.png');
+}
+
+
+.p-0 {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    top: -170px;
+}
+
+
+.p-1 {
+    position: relative;
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+    top: -170px;
+    padding: 50px;
+}
+
+.p-2 p {
+    position: relative;
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    border-radius: ;
+    margin-top: -140px;
+}
+
+.p-2 {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.order-now {
+    border: none;
+    border-radius: 40px;
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: #c00a28;
+    padding: 15px 100px 15px 100px;
+    transition: 0.3s;
+}
+.order-now:hover {
+    background: rgb(226, 111, 130);
+}
+
+.p-3 {
+    position: relative;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    top: -170px;
+    
+}
+
+.p-4 {
+    position: relative;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    top: -170px;
+    
+}
+
+.select-options {
+    position: relative;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 15px;
+    font-weight: 600;
+    top: -100px;
+    color: white;
+    background: #c00a28;
+    padding: 15px 70px 15px 70px;
+    transition: 0.3s;
+}
+
+.select-options:hover {
+    background: rgb(226, 111, 130);
+}
