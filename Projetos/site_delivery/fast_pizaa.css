@@ -5,7 +5,10 @@
     margin: 0px;
 }
 body{
-    height: 1000vh;
+    height: 450vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 a{
@@ -59,7 +62,20 @@ header{
     padding-top: 10px;
 }
 
+.img_carousel{
+    height: 80vh;
+}
 
+footer {
+    background-color: #2C2C2C;
+    height: 40vh;
+    margin-top: auto;
+    
+}
+
+.icons_footer_social{
+    width: 40px;
+}
 /* DANIEL */
 
 
