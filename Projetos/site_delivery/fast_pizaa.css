@@ -76,8 +76,13 @@ footer {
 .icons_footer_social{
     width: 40px;
 }
-/* DANIEL */
+.hover1-1:hover{
+    transform: scale(1.02);
+}
 
+.hover1-1{
+    transition: 0.3s;
+}
 
 .box_principal{
     margin: 30px;
