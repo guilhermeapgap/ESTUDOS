@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Fredericka+the+Great&family=Lobster&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Fredericka+the+Great&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+header{
+    padding-top: 10px;
+    background-color: #c00a28;
+    height: 100px;
+    color: white;
+    margin-bottom: 40px;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+
+div > p {
+    max-width: 300px;
+    margin: 0 10px;
+    font-size: 1.2em;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+.selec_img_menu{
+    width: 250px;
+    height: 150px;
+    margin: 12px;
+    border-radius: 10px;
+    box-shadow: -3px 2px 20px 0px rgb(0 0 0 / 39%);
+}
+
+footer {
+    background-color: #2C2C2C;
+    min-height: 40vh;
+    margin-top: 80px;
+
+}
+h1{
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+    transform: rotate(-20deg);
+    position: relative;
+    top: -10px;
+    left: -7px;
+
+}
+h2{
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em; 
+}
+h3{ 
+    font-family: 'Dancing Script', cursive;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.p_footer{
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+}
+.btn_contatos{
+    margin-right: 40px;
+    font-weight: 500;
+    font-size: 1.2em;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Outfit', sans-serif;
+    animation: contato 0.1s 15 alternate ;
+    transition: 1s;
+}
+.btn_contatos:hover{
+    transform: scale(1.2);
+}
+@keyframes contato {
+    from{
+        transform: rotate(-5deg); 
+    }
+    to{
+        transform: rotate(5deg);
+    }
+}
+.org_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 1350px;
+    flex-wrap: wrap;
+    min-height: 500px;
+}
+.org-div-menu{
+    margin: 40px;
+}
+.org-div-menu > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+@media (max-width:500px) {
+    .p_footer{
+        font-size: 2em;
+    }
+}
+.icons_pop_social{
+    width: 40px;
+    margin: 40px 0px 40px 35px;
+}
+.icons_footer_social{
+    width: 40px;
+    margin: 80px 0px 40px 35px;
+}
+.find_me{
+
+    border: none;
+    margin: auto;
+    border-radius: 40px;
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: #c00a28;
+    padding: 15px 100px 15px 100px;
+    transition: 0.3s;
+}
+.padding_menu{
+    padding: 20px 40px;
+    margin: 2px;
+    border: solid 1px #c00a283b;
+    border-top: solid 1px #c00a283b !important;
+    }
+.org-div-menu{
+    max-width: 600px;
+    text-align: justify;
+}
+.stevepizza{
+    max-width: 80px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:570px) {
+    .org-div-menu{
+        margin: 10px;
+    }
+    .selec_img_menu{
+        max-width: 120px;
+        margin: 5px;
+        height: 80px;
+    }
+    .selec_menu{
+        width: 250px;
+        justify-content: start;
+    }
+    div >p{
+        font-size: 0.9em;
+    }
+    .padding_menu{
+    padding: 10px;
+    }
+}
