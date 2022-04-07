@@ -27,11 +27,7 @@ a:hover{
 header{
     padding-top: 10px;
     background-color: #c00a28;
-<<<<<<< HEAD
     min-height: 160px;
-=======
-    height: 180px;
->>>>>>> parent of 1a3c71f (atualizado)
     color: white;
 }
 
@@ -113,18 +109,12 @@ header{
     margin: 0px;
     padding-top: 10px;
 }
-<<<<<<< HEAD
 .nav_num_telefone{
     font-size: 1.5em;
     font-weight: 500;
 }
 .phone{
     margin: 0px 50px 0px 10px;
-=======
-
-.img_carousel{
-    height: 80vh;
->>>>>>> parent of 1a3c71f (atualizado)
 }
 
 
@@ -178,10 +168,6 @@ footer {
     border-radius: 5px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of 1a3c71f (atualizado)
 .img_box2{
     background: url(Imagens/burgao_daniel.jpg) no-repeat;
     background-size: cover;
@@ -269,14 +255,6 @@ footer {
     background-attachment: fixed;
 }
 
-<<<<<<< HEAD
-=======
-
-.section-p {
-    background-image: url('Imagens/parallaxpizza.jpg');
-}
-
->>>>>>> parent of 1a3c71f (atualizado)
 
 .section-s {
     background-image: url('Imagens/mini-parallax.png');
@@ -294,12 +272,6 @@ footer {
 
 
 .p-0 {
-<<<<<<< HEAD
-=======
-    border: solid 3px red;
-    position: relative;
-    color: white;
->>>>>>> parent of 1a3c71f (atualizado)
     font-size: 25px;
     font-weight: 300;
 }
