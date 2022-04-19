@@ -131,11 +131,7 @@ footer {
 }
 
 
-@media (max-width:500px) {
-    .p_footer{
-        font-size: 2em;
-    }
-}
+
 .icons_pop_social{
     width: 40px;
     margin: 40px 0px 40px 35px;
@@ -377,178 +373,7 @@ footer {
     padding: 5px;
 }
 
-/* MEDIA QUERY */
 
-@media (max-width:768px) {
-    
-    .phone{
-        display: none !important;
-    }
-    .nav-item{
-        margin: 5px 20px 15px 20px;
-    }
-    .btn_contatos{
-        padding: 0px;
-    }
-
-    .icon_foods{
-        width: 60px;
-        height: 60px;
-        margin: 0px 10px 30px 10px;
-    } 
-    
-    .icon_foods_fries{
-        width: 40px;
-        margin: 0px 15px 25px 15px;   
-    }
-} 
-
-
-@media (max-width:870px) {
-    .nav_logo{
-        font-size: 1.3em;
-        left: 0px;
-        padding: 10px 0px 0px 0px;
-    }
-    .steve_pizza{
-        width: 70px;
-    }
-    header{
-        min-height: 100px;
-        padding-top: 0px;
-    }
-    .nav_principal{
-        min-height: 105px;
-    }
-} 
-
-@media (max-width:550px){
-    .img_carousel{
-        height: 300px;
-    }
-    .icon_foods{
-        width: 40px;
-        height: 40px;
-        margin: 0px 10px 30px 10px;
-    } 
-    
-    .icon_foods_fries{
-        width: 30px;
-        margin: 0px 15px 25px 15px;   
-    } 
-}
-
-@media (min-width: 1046px){
-    .nav_logo{
-    position: relative;
-    top: 30px;
-    left: 50px;
-    font-size: 2em;
-    font-family: 'Lobster', cursive;
-    transition: 1s;
-    transform: rotate(-20deg);
-    animation: steve_pizza 4 1s alternate ease-out;   
-
-}
-}
-@media (max-width: 1046px) {
-
-    .box_principal{
-        margin: 10px;
-    }
-}
-@media (max-width: 950px) {
-    .box_principal{
-        flex-direction: column-reverse;
-    }
-    .img_box1{
-        width: 400px;
-        height: 300px;
-        margin: 10px 0px;
-    }
-    .img_box4{
-        width: 400px;
-        height: 300px;
-    }
-}
-@media (min-width: 470px){
-    .img_box1{
-        display: flex;
-    }
-}
-@media (max-width: 470px){
-    .padding_menu{
-        padding: 10px;
-    }
-    .display_none_471{
-        display: none;
-    }
-    .order_now_small {
-        padding: 5px 20px 5px 20px;
-        opacity: 0.6;
-    }
-    .segundo_box{
-        margin: auto;
-    }
-    .box_principal{
-        margin: auto;
-        
-    }
-    .img_box1{
-        display: none;
-    }
-    .img_box2{
-        width: 90% !important;
-        height: 200px !important;
-        margin: 100px auto 5px auto !important;
-    }
-    .img_box3{
-        width: 90% !important;
-        height: 200px !important;
-        margin: 5px auto !important;
-
-    }
-    .img_box4{
-        margin: auto;
-        width: 90% !important;
-        height: 200px !important;
-        margin: 5px auto 100px auto!important;
-    }
-    .box_02{
-        width: auto;
-    }
-
-    .icons_pop_social{
-        width: 30px;
-        margin: 40px 0px 40px 30px;
-    }
-    
-}
-
-@media (max-width:390px) {
-    .icon_foods{
-        width: 40px;
-        height: 40px;
-        margin: 0px 0px 0px 10px;
-    } 
-    
-    .icon_foods_fries{
-        width: 30px;
-        margin: 0px 15px 0px 15px;   
-    } 
-    .org_icons_menu{
-        flex-direction: column;
-        margin: 0px 20px;
-    }
-    .nav-item{
-        margin: 5px 10px 15px 5px !important;
-    }
-}
-
-@media (min-width:1250) {
-    
-    
-}
 /* -----------------------------------------------
                     cardapio
 -------------------------------------------------*/
@@ -584,16 +409,7 @@ footer {
     padding: 10px;
 }
 
-@media (max-width:460px) {
-    .org_card_pizza{
-        max-width: 310px;
-    }
-    .img_pizza_cardapio{
-        max-width: 300px;
-        height: 200px;
-        border-radius: 10px;
-    }
-}
+
 
 #btn_feedback{
     background-color: #c00a28;
@@ -691,6 +507,70 @@ footer {
     text-align: center;
 }
 
+
+
+/************************ MEDIA QUERY ************************/
+
+@media (max-width:768px) {
+    
+    .phone{
+        display: none !important;
+    }
+    .nav-item{
+        margin: 5px 20px 15px 20px;
+    }
+    .btn_contatos{
+        padding: 0px;
+    }
+
+    .icon_foods{
+        width: 60px;
+        height: 60px;
+        margin: 0px 10px 30px 10px;
+    } 
+    
+    .icon_foods_fries{
+        width: 40px;
+        margin: 0px 15px 25px 15px;   
+    }
+} 
+@media (max-width:500px) {
+    .p_footer{
+        font-size: 2em;
+    }
+}
+@media (max-width:870px) {
+    .nav_logo{
+        font-size: 1.3em;
+        left: 0px;
+        padding: 10px 0px 0px 0px;
+    }
+    .steve_pizza{
+        width: 70px;
+    }
+    header{
+        min-height: 100px;
+        padding-top: 0px;
+    }
+    .nav_principal{
+        min-height: 105px;
+    }
+} 
+@media (max-width:550px){
+    .img_carousel{
+        height: 300px;
+    }
+    .icon_foods{
+        width: 40px;
+        height: 40px;
+        margin: 0px 10px 30px 10px;
+    } 
+    
+    .icon_foods_fries{
+        width: 30px;
+        margin: 0px 15px 25px 15px;   
+    } 
+}
 @media(max-width: 670px) {
     .product-title{
         margin-right: 16px;
@@ -741,5 +621,119 @@ footer {
     .basketTotal {
         width: 30%;
         font-size: 20px !important;
+    }
+}
+@media (max-width: 1046px) {
+
+    .box_principal{
+        margin: 10px;
+    }
+}
+@media (max-width: 950px) {
+    .box_principal{
+        flex-direction: column-reverse;
+    }
+    .img_box1{
+        width: 400px;
+        height: 300px;
+        margin: 10px 0px;
+    }
+    .img_box4{
+        width: 400px;
+        height: 300px;
+    }
+}
+@media (max-width: 470px){
+    .padding_menu{
+        padding: 10px;
+    }
+    .display_none_471{
+        display: none;
+    }
+    .order_now_small {
+        padding: 5px 20px 5px 20px;
+        opacity: 0.6;
+    }
+    .segundo_box{
+        margin: auto;
+    }
+    .box_principal{
+        margin: auto;
+        
+    }
+    .img_box1{
+        display: none;
+    }
+    .img_box2{
+        width: 90% !important;
+        height: 200px !important;
+        margin: 100px auto 5px auto !important;
+    }
+    .img_box3{
+        width: 90% !important;
+        height: 200px !important;
+        margin: 5px auto !important;
+
+    }
+    .img_box4{
+        margin: auto;
+        width: 90% !important;
+        height: 200px !important;
+        margin: 5px auto 100px auto!important;
+    }
+    .box_02{
+        width: auto;
+    }
+
+    .icons_pop_social{
+        width: 30px;
+        margin: 40px 0px 40px 30px;
+    }
+    .org_card_pizza{
+        max-width: 310px;
+    }
+    .img_pizza_cardapio{
+        max-width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    }
+}
+@media (max-width:390px) {
+    .icon_foods{
+        width: 40px;
+        height: 40px;
+        margin: 0px 0px 0px 10px;
+    } 
+    
+    .icon_foods_fries{
+        width: 30px;
+        margin: 0px 15px 0px 15px;   
+    } 
+    .org_icons_menu{
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    .nav-item{
+        margin: 5px 10px 15px 5px !important;
+    }
+}
+/************************* min-width *************************/
+
+@media (min-width: 1046px){
+    .nav_logo{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+    transition: 1s;
+    transform: rotate(-20deg);
+    animation: steve_pizza 4 1s alternate ease-out;   
+
+}
+}
+@media (min-width: 470px){
+    .img_box1{
+        display: flex;
     }
 }
