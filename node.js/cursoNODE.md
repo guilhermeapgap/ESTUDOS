@@ -137,7 +137,7 @@ console.log(`O meu nome e ${nome} e tenho ${idade} anos.`);
 
 * Que são salvos na pasta **node_modules**
 
-*  podemos instalar módulos com npm install <nome>
+*  podemos instalar módulos com npm install nome do pacote
 
 esta sendo executado **no terminal**:
 >node .\index.js --nome=Guilherme --profissao=programador
@@ -190,4 +190,101 @@ soma(a,b)
 
 * Há um método para limpar as mensagens de console
 
-[codigo]()
+[codigos de exeplo](https://github.com/guilhermeapgap/ESTUDOS/blob/main/node.js/Fundamentos/7-explorando-console/index.js)
+
+
+# Aula 27 
+
+## Melhorando a visualização com chalk
+
+funciona dessa forma apenas na versão
+
+> npm install chalk@4.1.2
+
+````js
+const chalk = require("chalk") // importando modulo
+
+const nota = 5
+
+
+if (nota >= 7){
+   console.log(chalk.green.bold('parabéns você estpa aprovado')) 
+} else {
+    console.log(chalk.bgRed.black('Você precisa estudar mais')) 
+}
+
+````
+
+# Aula 28
+
+## Lendo input de dados 
+
+* Podemos ler dados do usuário com o módulo **readline**, um Core Module
+
+* Neste caso utilizamos o método **question**, que faz uma pergunta a ser respondida pelo usuário
+
+* Depois podemos processar a resposta e entrar um retorno 
+
+*Entendendo o Codigo*
+
+1. no primeiro const estou importando o readline e criando uma interface de input e output
+
+2. no readline.question() estou criando uma pergunta e no ,(language) estou criando uma function
+
+3. depois deu um console.log() para imprimir um resultado
+
+4. depois fechei meu readline com readline.close()
+
+````js
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout,
+})
+
+readline.question("qual a sua linguagem de programação favorita?", (language) => {
+    console.log(`A minha linguagem preferida é: ${language}`)
+    readline.close()
+})
+````
+
+# Aula 29 
+
+## Abstração de input
+*precisamos instalar o inquirer*
+> npm install inquirer
+
+
+* explicação do codigo 
+
+1. no inquirer.prompt([{}])preciso colocar um array e um objeto ou varios assim **([{obj},{obj}])** 
+
+2. Depois preciso colocar os elementos .the() e .carch()
+
+3. se esta tudo certo com as perguntas ele vai para o .then() se tem algum erro ele vai para o .catch() o erro do catch a gente pega assim: .catch(err => console.log(err))
+
+4. no .then() a gente pega as respostas (answers) e cria uma arrow function => {} dentro dessa arrow a gente pode dar o consolo.log(answers)
+
+5. dentro da => {} eu calculei a media das notas criando um const depois disse que os valores eram inteiros da pergunta1 e na pergunta2 dividi / por 2 obtive a media
+
+6. depois dei um console.log(`a media e : ${media}')
+
+````js
+
+const inquirer = require('inquirer') // importando o modulo
+
+inquirer.prompt([{
+    name: 'pergunta1',
+    message: 'Qual a primeira nota? '
+},{
+    name: 'pergunta2',
+    message: 'Qual a segunda nota? '
+}]).then((answers) => {
+    console.log(answers)
+
+    const media = ((parseInt(answers.pergunta1) + parseInt(answers.pergunta2)) / 2 ) //calculo da media
+
+    console.log(`A media das suas notas foi: ${media}`);
+}).catch(err => console.log(err))//caso de erro 
+
+````
+
