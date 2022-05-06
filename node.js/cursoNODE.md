@@ -159,7 +159,7 @@ console.log(`Olá, meu nome e ${nome} e eu sou ${profissao}`);
 
 # Aula 25
 
-## usando mudulos internos e externos
+## usando módulos internos e externos
 
 comando que esta sendo executado no **terminal**
 >node .\index.js --a=20 --b=10
@@ -177,3 +177,17 @@ const b = parseInt(args['b'])
 
 soma(a,b)
 ````
+
+# Aula 26 
+
+## Explorando o console
+
+* Temos uma grande variedade de métodos no console, como o console.log
+
+* Podemos imprimir mais de uma variável por vez
+
+* Inserir variáveis entre strings
+
+* Há um método para limpar as mensagens de console
+
+[codigo]()
