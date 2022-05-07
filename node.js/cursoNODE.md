@@ -1,5 +1,5 @@
-# Node.js
-
+# Node.js   <img align="center" alt="Node" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/> 
+<a href="#guia-rápido" style="text-align: end;"> Guia rápido </a>
 
 ## Começando com node.js
 criamos um arquivo em **JS**, vamos até o terminal selecionamos a pasta destino do arquivo **JS** no terminal então damos o comando 
@@ -288,6 +288,7 @@ inquirer.prompt([{
 
 ````
 
+<<<<<<< HEAD
 # Aula 33
 
 ## Erros no Node.js
@@ -298,3 +299,7 @@ inquirer.prompt([{
 
 * try catch uma forma de evidenciar algo que deu errado em um bloco de codigo e exibir a mensagem de erro 
 
+=======
+# Guia rápido 
+[início](#nodejs---)
+>>>>>>> 1ee758d738429872c8e873d24468cfc9777c0e9b
