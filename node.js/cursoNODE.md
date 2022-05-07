@@ -288,3 +288,13 @@ inquirer.prompt([{
 
 ````
 
+# Aula 33
+
+## Erros no Node.js
+
+* Temos duas formas principais para gerar ou evidenciar erros em node.js
+
+* throw: uma forma de encerrar um programa, gerando um novo erro
+
+* try catch uma forma de evidenciar algo que deu errado em um bloco de codigo e exibir a mensagem de erro 
+
