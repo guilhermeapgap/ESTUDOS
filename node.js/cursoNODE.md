@@ -288,9 +288,7 @@ inquirer.prompt([{
 
 ````
 
-<<<<<<< HEAD
 # Aula 33
-
 ## Erros no Node.js
 
 * Temos duas formas principais para gerar ou evidenciar erros em node.js
@@ -299,7 +297,91 @@ inquirer.prompt([{
 
 * try catch uma forma de evidenciar algo que deu errado em um bloco de codigo e exibir a mensagem de erro 
 
-=======
+
+# Aula 37
+
+## O módulo http
+
+* Podemos cruar um servidor HTTP com este módulo
+
+* Ou seja, recever umas requisição e enviar código HTML como resposta, por exemplo 
+
+* Vamos utilizar alguns métodos como createServer, para criação do servidor 
+
+* E também listen, para determinar a porta 
+
+````js
+const http = require('http')
+
+const port = 3000 //porta do servidor
+ 
+const server = http.createServer((req, res) => {
+    res.write('Resposta do site')//Mandando um resposta
+    res.end()//fechando a resposta
+    //req = requisition 
+    //res = response
+}) //criando um servidor
+
+server.listen(port, () =>{
+    console.log(`servidor rodando na porta ${port}`)
+})
+````
+para abrir no navegador basta ir no browser e escrever localhost:numero da porta tipo 3000
+# Aula 38 
+
+## Parando a execução do servidor
+
+* Há alguns servços do node que ocupam a aba do terminal para continuar rodando 
+
+* Um deles e o modulo http
+
+* Para parar este serviço basta utilizar: ctrl + c
+
+* isso e util quando há um problema no código
+também
+
+
+# Aula 
+
+## Retornando HTML
+essa linha abaixo ela que faz que meu codigo reconheça HTML 
+>res.setHeader('contenty-type', 'text/html')
+
+
+````js
+const http = require('http')
+
+const port = 3000 //porta do servidor
+ 
+const server = http.createServer((req, res) => {
+    res.statusCode = 200
+    res.setHeader('contenty-type', 'text/html')//precisa dessa linha de codigo para aceitar HTML
+    res.end('<h1>Olá, este é meu primeiro server com HTML!!!</h1>')
+}) //criando um servidor
+
+server.listen(port, () =>{
+    console.log(`servidor rodando na porta ${port}`)
+})
+````
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Guia rápido 
 [início](#nodejs---)
->>>>>>> 1ee758d738429872c8e873d24468cfc9777c0e9b
