@@ -302,7 +302,7 @@ inquirer.prompt([{
 
 ## O módulo http
 
-* Podemos cruar um servidor HTTP com este módulo
+* Podemos criar um servidor HTTP com este módulo
 
 * Ou seja, recever umas requisição e enviar código HTML como resposta, por exemplo 
 
@@ -385,3 +385,9 @@ server.listen(port, () =>{
 
 # Guia rápido 
 [início](#nodejs---)
+
+- [Módulos internos](#módulos-internos)
+- [Módulos externos](#módulos-externos)
+- [Import e export](#import-e-export)
+- [Lendo input de dados](#lendo-input-de-dados)
+- [O módulo http](#o-módulo-http)
