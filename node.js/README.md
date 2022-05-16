@@ -1,5 +1,6 @@
 # Node.js   <img align="center" alt="Node" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/> 
-<a href="#guia-rápido" style="text-align: end;"> Guia rápido </a>
+
+## [Guia rápido](#guia-rápido)
 
 ## Começando com node.js
 criamos um arquivo em **JS**, vamos até o terminal selecionamos a pasta destino do arquivo **JS** no terminal então damos o comando 
