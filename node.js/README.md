@@ -385,7 +385,7 @@ server.listen(port, () =>{
 
 
 # Guia rápido 
-[início](#nodejs---)
+[início](#nodejs)
 
 - [Módulos internos](#módulos-internos)
 - [Módulos externos](#módulos-externos)
