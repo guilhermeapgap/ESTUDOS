@@ -342,7 +342,7 @@ para abrir no navegador basta ir no browser e escrever localhost:numero da porta
 também
 
 
-# Aula 
+# Aula 39
 
 ## Retornando HTML
 essa linha abaixo ela que faz que meu codigo reconheça HTML 
@@ -365,10 +365,58 @@ server.listen(port, () =>{
 })
 ````
 
+# Aula 41
+## Módulo URL
+
+* O módulo url serve para decompor uma URL que passamos para o método parse 
+
+* Podemos resgatar: host, path, search, query e etc
+
+* A partir destas informações podemos alterar a lógica do nosso código 
 
 
+# Aula 43 
+## Renderizando HTML
+
+````js
+const http = require('http')
+const fs = require('fs')
+
+const port = 3000 //porta do servidor
+ 
+const server = http.createServer((req, res) => {
+    fs.readFile('index.html', function(err, data){
+        res.writeHead(200, {'content-Type': 'text/html'})
+        res.write(data)//retornando a data o conteudo do HTMl
+        return res.end()
+    })
+}) //criando um servidor
+
+server.listen(port, () =>{
+    console.log(`servidor rodando na porta ${port}`)
+})
+
+````
 
 
+# Aula 46
+## Removendo arquivos
+
+O unlink que esta removendo o arquivo
+essa function(err) serve para caso ele não remora ou de algum outro tipo de erro mostrar no console
+
+````js
+const fs = require ('fs')
+
+fs.unlink('arquivo.txt', function(err){
+    if(err){
+        console.log(err)
+        return
+    }else{
+        console.log('Arquivo removido')
+    }
+})
+````
 
 
 
