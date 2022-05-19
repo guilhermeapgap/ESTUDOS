@@ -418,6 +418,64 @@ fs.unlink('arquivo.txt', function(err){
 })
 ````
 
+# Aula 47 
+
+## Renomeando arquivos 
+
+Estou renomeando o arquivo.txt por novo.txt
+a function serve para me apresentar caso de algum tipo de erro.
+
+````js
+const fs = require('fs')
+
+fs.rename('arquivo.txt', 'novo.txt', function(err){
+    if (err){
+        console.log(err)
+        return
+    }else{
+        console.log('arquivo renomeado');
+    }
+})
+````
+
+# Aula 49 
+
+## Verificando dados do arquivo
+
+````js
+const fs = require('fs')
+
+fs.stat('arquivo.txt',(err, stats) =>{
+    if(err){
+        console.log(err);
+        return
+    }
+    console.log(stats.isFile())// e um arquivo?
+    console.log(stats.isDirectory());//é um diretório?
+    console.log(stats.isSymbolicLink());// é um link sinbolico?
+    console.log(stats.ctime);// que dia foi criado?
+    console.log(stats.size);// qual tamanho?
+})
+````
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
