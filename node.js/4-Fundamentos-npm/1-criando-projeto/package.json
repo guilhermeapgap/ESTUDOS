@@ -1,0 +1,11 @@
+{
+  "name": "meu-primeiro-projeto-em-node",
+  "version": "1.0.0",
+  "description": "meu primeiro projeto com npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme",
+  "license": "(MIT)"
+}

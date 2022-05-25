@@ -458,11 +458,73 @@ fs.stat('arquivo.txt',(err, stats) =>{
 })
 ````
 
+# Aula 56
+
+## O que é npm
+
+* É o principal gerenciador de pacotes do Node.js
+
+* A sigla: Node Package Manager
+
+* A maioria dos projetos que vamos trabalhar em node, tambem te´ra atuação do nom 
+
+* Podemos não só instalar pacotes mas tambem configurar o projeto e rodar scripts por meio do npm
+
+* A criação de um projeto dera sempre um arquivo, o package.json
+
+# Aula 57 
+
+## Criando um projeto com npm
+
+* Para iniciar um projeto, podemos utulizar o comando nom init
+
+* Seremos questionados para configurar algumas opções iniciais 
+
+* Como o nome do projeto 
+
+* E então um package.json condensando as informalções é criado 
+
+* Isto caracteriza o início do projeto com npm e Node 
+
+# Aula 58 
+## NPM init rapido 
+* basta dar um npm init -y
+a flag -y dara yes em todas as perguntas
+
+# Aula 59
+## Instalando um pacote 
+* Para instalar um pacote vamos utilizar o comando npm install <nome>
+
+* <nome> seá substituido pelo nome do pacote 
+
+* qunado fazemos desta maneira a instalalçao uma pasta node_modules e criada 
+
+* Nela todos os aquivos de módulos de terceiro são armazenados 
+
+* sempre que rodarmos o comando npm install, a pasta node_modules e recriada com todos os modulos do package.json
 
 
+# Aula 60 
+## Onde encontrar os módulos 
+[site npm](npmjs.com/package)
 
 
+# Aula 62
+## Atualização de pacotes
+* npm update
 
+
+# Aula 64 
+
+## Instalando pacote global 
+
+* Um pacote global não fica salvo na pasta node_modules do projeto 
+
+* Ele fica salvo no computador do usuário
+
+* A vantagem é que podemos acessá-lo em qualquer local via terminal
+
+* utilizando a flag -g em node install 
 
 
 
