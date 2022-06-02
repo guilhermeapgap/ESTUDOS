@@ -26,3 +26,11 @@ export default function App(){
 >
 >obs: se apagar todos os outros preciso tirar o export desses arquivos no meu index.js
 
+
+**Importante, o nome do componente sempre tem que esta com a primeira letra maiuscula**
+>ex: <App/> ou Function Sobre(){} etc...
+
+# **estudar sobre props aulas 31,32**
+
+# Aula 33
+
