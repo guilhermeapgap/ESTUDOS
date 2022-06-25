@@ -31,7 +31,6 @@ app.listen(port, () => {
 
 
 
-
 // req= requisição, quando recebe um dado quando o usuario enviou um formulario 
 
 // res = resposta, o que a gente envia para o usuario 
