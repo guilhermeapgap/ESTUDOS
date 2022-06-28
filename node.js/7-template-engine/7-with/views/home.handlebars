@@ -1,0 +1,32 @@
+<h1>App</h1>
+
+<p>que doideira</p>
+
+<ul>
+    <li><a href="/">home</a></li>
+    <li>contatos</li>
+    <li>mais</li>
+</ul>
+
+
+<h2>meu nome é {{user.name}} {{user.surname}}</h2>
+
+
+
+<h3>Eu tenho {{user.age}}</h3>
+<h3>Sou de {{user.local}}</h3>
+
+
+{{#if auth}}
+    <p>voce esta autebcicado <a href="/dashboard">clique aqui</a></p>
+{{/if}}
+
+
+
+{{#if approved}}
+    <p>parabens seu cadastro foi aprovado</p>
+
+{{else}}
+    <P>SEU CADASTRO FOI NEGADO!</P>
+{{/if}}
+
