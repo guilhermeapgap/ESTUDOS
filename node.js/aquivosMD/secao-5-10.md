@@ -40,12 +40,11 @@ para instalar o express
 **Pacotes nessesarios para esse projeto**
 >express express-handlebars nodemon mysql
 
-`````js
+````js
 const express = require('express')
 const exphbs = require('express-handlebars')
 const mysql = require('mysql')
 const app = express()
-
 
 app.engine('handlebars', exphbs.engine())
 app.set('view engine','handlebars')//template engine
@@ -68,7 +67,6 @@ const conn = mysql.createConnection({
     port: '3307'
 })// dados do banco do dados 
 
-
 conn.connect(function(err){
     if(err){
         console.log(err)
@@ -83,6 +81,17 @@ conn.connect(function(err){
 
 
 
+# Aula  124
+
+## Tratando uma query para ter mais segurança 
+
+````js
+const sql = `INSERT INTO books (??, ??) VALUES (?,?)`//codigo que ira para o banco de dados 
+const data = ['title','pageqty', title, pageqty]//esse const esta substituindo as interrogações
+````
+
+ao invez de passar diretamente a coluna e o dado colocamos uma ? e logo abaixo criamos uma variavel indicando cada posição das ?
+> lembrar de chamar a variavel que foi criada 
 
 
 

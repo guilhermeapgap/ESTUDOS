@@ -69,6 +69,41 @@ app.get('/books', (req, res) => {
 })
 
 
+//selecionando um arquivo especifico pelo ID
+app.get('/books:id', (req, res)=>{
+    const id = req.params.id//pegando o id
+
+    const sql = `SELECT * FROM books WHERE id = ${id}`//mandando para o banco 
+
+    conn.query(sql, function(err, data){
+        if(err){
+            console.log(err)
+            return
+        }
+        const book = data[0]
+
+        res.render('book', {book})
+    })
+})
+
+//editando 
+app.get('/books/edit/:id', (req,res)=>{
+    const id = req.params.id
+
+    const sql = `SELECT * FROM books WHERE id = ${id}`
+
+    conn.query(sql, function(err, data){
+        if(err){
+            console.log(err)
+            return
+        }
+        const book = data[0]
+
+        res.render('editbook', {book})
+    })
+
+})
+
 
 const conn = mysql.createConnection({
     host: 'localhost',
