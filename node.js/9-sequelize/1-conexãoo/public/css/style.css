@@ -1,0 +1,73 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    padding: 120px 0px;
+}
+h1{
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-weight: 600;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+}
+
+h1{
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+input{
+    margin: 5px;
+    width: 450px;
+}
+
+.submit{
+    width: 80px;
+}
+
+.books-container div{
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+.books-container{
+    width: 550px;
+    margin: 0 auto;
+}
+
+.center-a{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+#book-page, .container{
+    text-align: center;
+}
+#book-page{
+    padding: 2em;
+}
