@@ -32,7 +32,7 @@ app.post('/users/create', function (req, res) {
     if (newsletter === 'on') {
       newsletter = true
     }else {
-        newsletter = false
+        newsletter = falsegit 
     }
 
     User.create({ name, occupation, newsletter })
