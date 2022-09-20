@@ -93,8 +93,17 @@ const data = ['title','pageqty', title, pageqty]//esse const esta substituindo a
 ao invez de passar diretamente a coluna e o dado colocamos uma ? e logo abaixo criamos uma variavel indicando cada posição das ?
 > lembrar de chamar a variavel que foi criada 
 
+# Aula 149 
 
+## Estrutura MVC     
 
+* controllers: pasta que ficam os arquivos de controller;
+
+* models: pasta que ficam os arquivos de Model;
+
+* views: pasta que ficam os arquivos de rotas;
+
+* index.js: arquivo que inicializa a aplicação;
 
 
 
