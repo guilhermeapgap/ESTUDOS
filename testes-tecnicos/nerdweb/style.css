@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Fredericka+the+Great&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.justify-nav{
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+    max-height: 40px;
+}
+
+.img-search{
+    background: url(img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 1.3em;
+    padding-right: 1.3em;
+}
+.search{
+    border: solid 1px #0089BC;
+    border-radius: 10px;
+    height: 30px;
+
+}
+
+.navbar-dark{
+    background-color: #033244;
+}
+
+.border-top-blue{
+    border-top: solid 4px #71D8FF;
+}
+.border-botton-blue{
+    border-bottom: solid 6px #71D8FF;
+}
+
+/* responsive */
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+
+
+
+/* using in several different tags */
+.d-flex{
+    display: flex;
+}
+.m-1{
+    margin: 10px;
+}
+.aling-center{
+    display: flex;
+    align-items: center;
+}
+.png-little{
+    width: 12px;
+    cursor: pointer;
+}
+.png-little-2{
+    width: 24px;
+    cursor: pointer;
+}
+
+.text-white > *{
+    color: white;
+}
+
+.w-100{
+    width: 100%;
+}
