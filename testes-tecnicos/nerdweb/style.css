@@ -8,12 +8,22 @@
     font-weight: 400;
     /* box-sizing: border-box; */
 }
+h1{
+    font-size: 2em;
+    font-weight: 600;
+}
+h2{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
 
 a{
     color: black;
     text-decoration: none;
 
 }
+
 
 .justify-nav{
     display: flex;
@@ -54,6 +64,15 @@ a{
     align-items: center;
 }
 
+.banner{
+    background-image: url(img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    border-bottom: solid 6px #71D8FF
+}
 /* carrossel */
 .card-carousel{
     box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.85);
@@ -66,7 +85,7 @@ a{
     display: flex;
     justify-content: center;
   }
-  
+
 .slides-container {
     width: 80%;
     display: flex;
@@ -82,25 +101,106 @@ a{
     height: 100px;
     flex: 1 0 10%;
   }
-  
+/* carousel 3 */
+.slide-3 {
+    list-style: none;
+    width: 100%;
+    height: 450px;
+    flex: 1 0 10%;
+  }
 
+.slides-container-3 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+  
 /*  */
 .container-sec1{
     margin: 20px;
-    width: 100%;
 }
 .btn-seeall{
     max-width: 200px;
+}
+
+.cotainer-time{
+    display: flex;
+    align-items: center;
+    background:url(img/bg\ time.png) no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin: 40px 0;
+    padding-left: 200px;
+    border-bottom: solid 6px #71D8FF;
+}
+.org-time > *{
+    margin-bottom: 15px;
+}
+.card-service{
+    max-width: 400px;
+    background-color: #283137;
+}
+
+.sec-conheca{
+    background: url(img/BG\ CONHEÇA.png) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.container-historia > *{
+    margin-bottom: 20px;
+}
+.container-historia{
+    max-width: 600px;
+    padding-left: 200px;
+}
+.fig-botton-div{
+    background: url(img/fig-2.png) no-repeat center;
+    background-size: cover;
+    max-width: 1600px;
+    height: 40px;
+    margin: 50px auto;
+}
+
+
+/* footer */
+footer{
+    background-color: #283137;
+    height: 400px;
 }
 /* responsive */
 
 @media (max-width: 575.98px) {}
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .banner{
+        background-image: url(img/banner-small.png);
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        border-bottom: solid 6px #71D8FF;
+    }
+}
 
 @media (max-width: 991.98px) {}
 
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+    .slides-container-3 {
+        width: 80%;
+        display: flex;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .slide-3 {
+        flex: 1 0 100%;
+      }
+}
 
 
 @media (min-width: 576px) {}
@@ -115,8 +215,13 @@ a{
 
 
 /* using in several different tags */
+
+
 .d-flex{
     display: flex;
+}
+.w-img{
+    max-width: 400px;
 }
 .m-1{
     margin: 10px;
@@ -126,6 +231,13 @@ a{
 }
 .m-a{
     margin: auto;
+}
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.size-1{
+    font-size: 1.2em;
 }
 .aling-center{
     display: flex;
@@ -144,10 +256,16 @@ a{
     cursor: pointer;
 }
 
+.text-white{
+    color: white;
+}
 .text-white > *{
     color: white;
 }
-
+.text-dark-blue{
+    color: #005271;
+    max-width: 500px;
+}
 .w-100{
     width: 100%;
 }
@@ -170,6 +288,8 @@ a{
 
 .text-blue{
     color: #00AEEF;
+
+    color: rgb(0, 174, 239);
 }
 .btn-blue{
     background-color: #71D8FF;
