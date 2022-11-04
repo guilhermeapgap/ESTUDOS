@@ -1,7 +1,14 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+const slidesContainer = document.getElementById("slides-container");
+const slide = document.querySelector(".slide");
+const prevButton = document.getElementById("slide-arrow-prev");
+const nextButton = document.getElementById("slide-arrow-next");
 
-Swiper.use([Navigation, Pagination]);
+nextButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft += slideWidth;
+});
 
-new Swiper('.my-swiper', {
-  // ...
+prevButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft -= slideWidth;
 });
