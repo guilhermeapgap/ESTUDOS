@@ -12,3 +12,10 @@ prevButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft -= slideWidth;
 });
+
+// Carousel Auto-Cycle
+$(document).ready(function() {
+  $('.carousel').carousel({
+    interval: 6000
+  })
+});
