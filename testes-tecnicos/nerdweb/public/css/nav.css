@@ -44,7 +44,7 @@ label .hamburger:after { bottom: -10px; }
 label input { display: none; }
 
 label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #283137, 0 0 0 100vh #283137;
+  box-shadow: 0 0 0 100vw #283137, 0 0 0 102vh #283137;
   border-radius: 0;
   
 }
@@ -89,6 +89,11 @@ label a {
   text-decoration: none;
 }
 
+.border-white{
+  border-top: 1px solid white;
+  width: 350px;
+}
+
 @media (min-width:800px) {
     .d-responsive{
         display: none;
@@ -100,13 +105,74 @@ label a {
     padding:10px;
     max-height: 40px;
   }
+
+  
 }
 @media (max-width:800px) {
-    .d-none-words{
+  .d-none-words{
         display: none;
     }
 
-    .navbar-dark{
+  .navbar-dark{
       display: none;
   }
+  .search{
+    display: none;
+  }
+
+  .nav-config-1{
+    display: none;
+  }
 }
+
+.dropbtn {
+  display: flex;
+  align-items: center;
+  background-color: #033244;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 900px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: start;
+}
+.drop-config{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {
+  display: block;
+}
+
+.logo-menu{
+  margin: 20px;
+  max-width: 100px;
+  position: relative;
+  top: -24vw;
+}
+
