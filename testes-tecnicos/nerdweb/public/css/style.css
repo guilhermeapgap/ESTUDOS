@@ -26,6 +26,10 @@ a{
     text-decoration: none;
 
 }
+button:hover, a:hover, .btn-cadastre:hover{
+    transform: scale(1.1) !important;
+    transition: 0.5s;
+}
 p{
     text-align: center;
 }
@@ -33,7 +37,7 @@ p{
     display: flex;
     justify-content: space-around;
     padding:10px;
-    max-height: 40px;
+    max-height: 40px !important;
 }
 
 .img-search{
