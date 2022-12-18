@@ -1,7 +1,14 @@
 const User = require('../models/User')
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
 
+//helpers
+const createUserToken = require('../helpers/create-user-token')
+const getToken = require('../helpers/get-token')
 module.exports = class UserController{
+
+
+    //register
     static async register(req, res){
         
         const {name, email, phone, password, confirmpassword} = req.body
@@ -57,12 +64,63 @@ module.exports = class UserController{
         try{
 
             const newUser = await user.save()
-            res.status(201).json({
-                message: 'Usuario criado',newUser,
-            })
+            await createUserToken(newUser, req,res)
 
         }catch(error){
             res.status(500).json({message: error})
         }
+    }
+
+
+    //Login
+    static async login(req,res){
+        const{email, password} = req.body
+
+        if(!email){
+            res.status(422).json({message:'O Email é obrigaório'})
+            return
+        }
+        if(!password){
+            res.status(422).json({message:'A senha é obrigaória'})
+            return
+        }
+
+        //check if user exists
+        const user = await User.findOne({email: email})
+
+        if(!user){
+            res.status(422).json({
+                message: 'Não há usuário cadastrado com este e-mail!',
+            })
+            return
+        }
+        // check if password match with db password
+        const checkPassword = await bcrypt.compare(password, user.password)
+        
+        if(!checkPassword){
+            res.status(422).json({
+                message: 'A senha está incorreta'
+            })
+            return
+        } 
+        await createUserToken(user,req,res)       
+    }
+// check users
+    static async checkUser(req,res){
+        let currentUser
+
+        if(req.headers.authorization){
+
+        const token = getToken(req)
+        const decoded = jwt.verify(token, 'nossosecret')
+
+        currentUser = await User.findById(decoded.id)
+
+        currentUser.password = undefined
+
+        }else{
+            currentUser = null
+        }
+        res.status(200).send(currentUser)
     }
 }
