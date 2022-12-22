@@ -5,6 +5,10 @@ const jwt = require('jsonwebtoken')
 //helpers
 const createUserToken = require('../helpers/create-user-token')
 const getToken = require('../helpers/get-token')
+const getUserByToken = require('../helpers/get-user-by-token')
+
+
+
 module.exports = class UserController{
 
 
@@ -122,5 +126,85 @@ module.exports = class UserController{
             currentUser = null
         }
         res.status(200).send(currentUser)
+    }
+//find user by id
+    static async getUserById(req,res){
+        const id = req.params.id
+        const user = await User.findById(id).select('-password')
+
+        if(!user){
+            res.status(422).json({
+                message:'Usuário não encontrado'
+            })
+            return
+        }
+        res.status(200).json({user})
+    }
+// edit user
+    static async editUser(req,res){
+        const id = req.params.id
+
+        //check if user exists
+        const token = getToken(req)
+        const user = await getUserByToken(token)
+
+        const {name, email, phone, password, confirmpassword} = req.body
+
+
+        if(req.file){
+            user.image = req.file.filename
+        }
+        //validations
+        
+        if(!name){
+            res.status(422).json({message:'O nome é obrigaório'})
+            return
+        }
+        if(!email){
+            res.status(422).json({message:'O Email é obrigaório'})
+            return
+        }
+
+        //check if email has alread taken
+        const userExists = await User.findOne({email: email})
+
+        if(user.email !== email && userExists){
+            res.status(422).json({
+                message:'Por favor utilize outro e-mail!'
+            })
+            return
+        }
+        user.email = email
+
+        if(!phone){
+            res.status(422).json({message:'O telefone é obrigaório'})
+            return
+        }
+        user.phone = phone
+
+        if(password != confirmpassword){
+            res.status(422).json({message:'As senhas não conferem!'})
+            return
+        }else if(password === confirmpassword && password != null){
+            // crate a password
+            const salt = await bcrypt.genSalt(12)
+            const passwordHash = await bcrypt.hash(password, salt)
+
+            user.password = passwordHash
+        }
+        try{
+            //returns user updated data
+            await User.findByIdAndUpdate(
+                {_id: user._id},
+                {$set: user},
+                {new:true},
+            )
+            res.status(200).json({
+                message: "Usuário atualizado com sucesso"
+            })
+        }catch (err){
+            res.status(500).json({message:err})
+            return
+        }
     }
 }
