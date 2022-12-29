@@ -40,27 +40,29 @@
         const token = getToken(req)
         const user = await getUserByTooken(token)
         //create a pet 
+
+
+          
         const pet = new Pet({
             name,
             age,
             weight,
             color,
             available,
-            images:[],
+            images: [],
             user:{
                 _id: user._id,
                 name: user.name,
                 image: user.image,
                 phone: user.phone,
             },
+            
         })
-        
+
         images.map((image) => {
             pet.images.push(image.filename)
-        })
-        //if(req.files){
-        //    pet.images = req.files.filename
-        //}
+          })
+        
 
         try {
 
@@ -73,5 +75,24 @@
             res.status(500).json({message: error})    
 
         }
+    }
+    static async getAll (req,res){
+        const pets = await Pet.find().sort('-createdAt')
+
+        res.status(200).json({
+            pets: pets,
+        })
+    }
+    static async getAllUserPets(req,res){
+        //get user from token
+        const token = getToken(req)
+        const user = await getUserByTooken(token)
+        
+        const pets = await Pet.find({'user._id': user._id}).sort('-createdAt')
+
+        res.status(200).json({
+            pets,
+        })
+
     }
  }
