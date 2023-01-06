@@ -232,10 +232,10 @@ footer{
     display: flex;
     margin-bottom: 20px;
 }
-.container-imgs > *{
-    width: 30px;
-    height: 20px;
-    padding: 15px;
+.container-imgs > a > *{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
 }
 .logo-footer{
     margin: 20px;
