@@ -140,7 +140,7 @@ p{
 .cotainer-time{
     display: flex;
     align-items: center;
-    background:url(../../img/bg\ time.png) no-repeat;
+    background:url(../../img/parceiros1.png) no-repeat;
     background-size: cover;
     height: 500px;
     margin: 40px 0;
@@ -380,6 +380,11 @@ footer{
     .box-footer-org{
         display: flex;
         flex-direction: column;
+    }
+}
+@media (max-width: 1680px) {
+    .services-cards{
+        max-width: 1024px;
     }
 }
 @media (min-width: 1200px) {
@@ -667,6 +672,12 @@ footer{
 }
 .text-blue-1{
     color: #61328A;
+}
+.text-roxo{
+    color: #A545BF;
+}
+.text-black{
+    color: black;
 }
 .btn-blue{
     background-color: #61328A;

@@ -1,178 +1,129 @@
+/* header */
 
-label .menu {
-  position: absolute;
-  right: -80px;
-  top: -105px;
-  z-index: 100;
-  width: 200px;
-  height: 100px;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
-  
-}
-
-label .hamburger {
-  position: absolute;
-  top: 135px;
-  left: 50px;
-  width: 30px;
-  height: 2px;
-  background: #61328A;
-  display: block;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-}
-
-label .hamburger:after, label .hamburger:before {
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  content: "";
-  position: absolute;
-  display: block;
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   width: 100%;
-  height: 100%;
-  background: #61328A;
+  min-height: 65px;
+  z-index: 3;
 }
 
-label .hamburger:before { top: -10px; }
-
-label .hamburger:after { bottom: -10px; }
-
-label input { display: none; }
-
-label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #283137, 0 0 0 102vh #283137;
-  border-radius: 0;
-  
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
 }
 
-label input:checked + .menu .hamburger {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  
-}
-
-label input:checked + .menu .hamburger:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  bottom: 0;
-  
-}
-
-label input:checked + .menu .hamburger:before {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  top: 0;
-  
-}
-
-label input:checked + .menu + .responnsive-menu { opacity: 1; }
-
-label .responnsive-menu {
-  z-index: 200;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  -webkit-transition: .25s 0s ease-in-out;
-  transition: .25s 0s ease-in-out;
-}
-
-label a {
-  margin-bottom: 1em;
+.header li a {
   display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
 
-.border-white{
-  border-top: 1px solid white;
-  width: 350px;
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
 }
 
-@media (min-width:800px) {
-    .d-responsive{
-        display: none;
-    }
-
-    .navbar-dark{   
-    display: flex;
-    justify-content: space-around;
-    padding:10px;
-    max-height: 40px;
-  }
-
-  
-}
-@media (max-width:800px) {
-  .d-none-words{
-        display: none;
-    }
-
-  .navbar-dark{
-      display: none;
-  }
-  .search{
-    display: none;
-  }
-
-  .nav-config-1{
-    display: none;
-  }
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
-.dropbtn {
-  display: flex;
-  align-items: center;
-  background-color: #033244;
-  color: white;
-  border: none;
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
   cursor: pointer;
-  padding: 10px;
-}
-
-.dropdown {
+  display: inline-flex;
+  padding: 28px 20px;
   position: relative;
-  display: inline-block;
+  user-select: none;
 }
 
-.dropdown-content {
-  display: none;
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 900px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  text-align: start;
-}
-.drop-config{
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
+  transition: all .2s ease-out;
+  width: 100%;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.header .menu-icon .navicon:before {
+  top: 5px;
 }
 
-.dropdown a:hover {background-color: #ddd;}
-
-.show {
-  display: block;
+.header .menu-icon .navicon:after {
+  top: -5px;
 }
 
-.logo-menu{
-  margin: 20px;
-  max-width: 100px;
-  position: relative;
-  top: -24vw;
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
 }
 
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
