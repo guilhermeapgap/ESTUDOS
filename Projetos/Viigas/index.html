@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/LogoVigasVioleta.png" type="image/x-icon">
     <link rel="stylesheet" href="public/css/nav.css">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
 
 
 </head>
@@ -51,17 +52,31 @@
                     </div>
                 </div>
             </div>  -->
-            <div class="header">
+            <!-- <div class="header">
                 <a href="" class="logo"><img src="img/LogoViigasPretoTransparente.png"  class="m-1 logoVigas"alt="logo"></a>
-                <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                <ul class="menu">
-                  <li><a href="#work" class="text-black">Our Work</a></li>
-                  <li><a href="#about" class="text-black">About</a></li>
-                  <li><a href="#careers" class="text-black">Careers</a></li>
-                  <li><a href="#contact" class="text-black">Contact</a></li>
-                </ul>
-            </div>
+                <div class="nav-resposive">
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                      <li><a href="#work" class="text-black">Serviços</a></li>
+                      <li><a href="#about" class="text-black">Quem somos</a></li>
+                      <li><a href="#contact" class="text-black">contato</a></li>
+                    </ul>
+                </div>
+            </div> -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img src="img/LogoViigasPretoTransparente.png" alt="logo" class="m-1 logoVigas"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#work" class="text-black nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#about" class="text-black nav-link">Quem somos</a></li>
+                    <li class="nav-item"><a href="#contact" class="text-black nav-link">contato</a></li>
+                  </ul>
+                </div>
+              </nav>
             <div class="banner"></div>
         </nav>
     </header>
@@ -109,9 +124,56 @@
                 <img src="img/fig-1.png" alt="fig" class="img-border">
             </div>
             
+<!-- carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex flex-column aling-center h-100 m-2">
+                        <img src="img/Routes.png"  alt="Routes">
+                            <p>Tráfego Pago</p>
+                            <p>Campanhas exclusivas que vão trazer novos clientes todos os dias para o seu negócio com resultados garantidos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column aling-center h-100 m-2">
+                        <img src="img/website.png" alt="headset">
+                            <p>Web Design</p>
+                            <p>Criação e gestão de sites, landins pages e Blogs, seu negócio no mundo digital de forma profissional.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column aling-center h-100 m-2">
+                        <img src="img/social.png" alt="check">
+                            <p>Social Media</p>
+                            <p>Engaje com eu públco alvo e venda mais através das redes sociais</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column aling-center h-100 m-2">
+                        <img src="img/check.png" alt="check">
+                            <p>consultoria</p>
+                            <p>Entregamos soluções para seu negócio no mundo digital e plubicitário.</p>
+                    </div>
+                </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark control-carousel" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark control-carousel" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
             <!-- carousel -->
             
-            <div class="carousel">
+            <!-- <div class="carousel">
                 <div class="carousel-inner">
                     <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
                     <div class="carousel-item">
@@ -142,32 +204,41 @@
                     <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
                     <div class="carousel-item">
                         <div class="card-box">
-                            <img src="img/website.png" alt="headset" class="size-img-services">
+                            <img src="img/website.png" alt="website" class="size-img-services">
                             <p>Web</p>
                             <p>Criação e gestão de sites, landins pages e Blogs, seu negócio no mundo digital de forma profissional.</p>
                         </div>
                     </div>
-
-                    <label for="carousel-3" class="carousel-control prev control-1">‹</label>           
+                    <!-- <label for="carousel-3" class="carousel-control prev control-1">‹</label>           
                     <label for="carousel-2" class="carousel-control next control-1">›</label>
                     <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+
                     <label for="carousel-3" class="carousel-control next control-2">›</label>
                     <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-                    <label for="carousel-1" class="carousel-control next control-3">›</label>
+                    <label for="carousel-1" class="carousel-control next control-3">›</label> -->
+                    
+                   <!-- <label for="carousel-3" class="carousel-control prev control-1">‹</label>           
+                    <label for="carousel-2" class="carousel-control next control-1">›</label>
+                    <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+
+                    <label for="carousel-3" class="carousel-control next control-2">›</label>
+                    <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                    <label for="carousel-1" class="carousel-control next control-3">›</label>-->
+                    
                     
                 </div>
-            </div>
-            <div class="text-center m-2">
+            </div> 
+            <div class="text-center m-4">
                 <a href="#" class="btn-blue btn-services text-center">Ver Serviços</a>
             </div> 
 
             <!--\ carousel -->
-             <div class="container-sec1">                
+             <!-- <div class="container-sec1">                
             <div class="container-carousel">
                 <h2 class="text-center">Conheça todos <span class="text-blue">produtos Viigas</span></h2>
-            </div> -->
+            </div>  -->
             <!-- carrosel -->
-             <div class="slider-wrapper">
+             <!-- <div class="slider-wrapper">
                 <ul class="slides-container" id="slides-container">
                   <li class="slide card-carousel"><img src="img/img2.png" alt="card"></li>
                   <li class="slide card-carousel"><img src="img/img3.png" alt="card1"></li>
@@ -186,7 +257,7 @@
                   <li class="slide card-carousel"><img src="img/slide1.png" alt="card2"></li>
 
                 </ul>
-            </div> -
+            </div> - -->
         </div>
         <!-- <div class="justify-center mb-1">
             <a href="#" class="btn-blue btn-seeall">Ver Todos Produtos</a>
@@ -197,10 +268,11 @@
                 <h1 class="text-center">Conheça alguns de nossos parceiros</h1>
                 <p class="text-dark-blue text-init">Veja algumas empresas que já optam e tem resultados com as estratégias que definimos para seus negócios, quanto para marketing digital e soluções para suas redes sociais!</p>
                 <a href="#" class="btn-blue btn-cadastre">Confira!</a>
+                
             </div>
         </section>
-        <section>
-            <h1 class="text-center">Seleção de Serviços</h1>
+         <!-- <section>
+            <h1 class="text-center" id="work">Seleção de Serviços</h1>
             <p class="text-blue text-center size-1">Conheça nossa seleção especial</p>
             <div class="slider-wrapper">
                 <ul class="slides-container-3" id="slides-container">
@@ -224,11 +296,43 @@
                   </li>
                 </ul>
             </div>
+        </section>  -->
+
+        <section>
+            <h1 class="text-center" id="work">Seleção de Serviços</h1>
+            <p class="text-blue text-center size-1">Conheça nossa seleção especial</p>
+            <ul class="d-flex card-service flex-column flex-xl-row aling-center">
+                <li>
+                    <img src="img/trafegopago.jpg" alt="card" class="w-img  p-0">
+                    <h2 class="text-white p-10">Gestão de tráfego</h2>
+                    <p class="text-white  p-10 mb-1">Gestão de tráfego pago completa analisando qual a necessidade de seu produto ou serviço entregando o melhor custo/benefício das agências de marketing.</p>
+                    <a href="#" class="text-blue  p-10">CONHECER</a>
+                </li>
+                <li>
+                    <img src="img/web.jpg" alt="card" class="w-img p-0">
+                    <h2 class="text-white  p-10">Desenvolvimento de web-sites</h2>
+                    <p class="text-white  p-10 mb-1">Desenvolvimento de sites com designers profissionais aumentando as conversões dos clientes que acessam de forma direta e objetiva.</p>
+                    <a href="#" class="text-blue  p-10">CONHECER</a>
+                </li>
+                <li>
+                    <img src="img/socialmedia.jpg" alt="card" class="w-img p-0">
+                    <h2 class="text-white  p-10">Social Media</h2>
+                    <p class="text-white  p-10 mb-1">Gestão completa das suas redes sociais de como aumentar o número de vendas, com as "call to actions" e melhora na credibilidade e conhecimento de sua marca.</p>
+                    <a href="#" class="text-blue  p-10">CONHECER</a>
+                </li>
+            </ul>
         </section>
+            <!-- carousel 2 -->
+
+
+
+
+
+            
         <section class="conntainer-sec-conheca">
             <div class="sec-conheca">
                 <div class="container-historia">
-                    <h1 class="text-white ">Conheça a visão Viigas e entenda nossa história</h1>
+                    <h1 class="text-white " id="about">Conheça a visão Viigas e entenda nossa história</h1>
                     <p class="text-blue size-1 text-init">Fundada em 2022 por um grupo de jovens empreendedores que buscam levar seu conhecimento para ajudar novas empresas a alcançar os resultados almejados sem prejudicar seus orçamentos...</p>
                     <a href="#" class=" btn-blue
                     text-white">IR PARA SOBRE</a>
@@ -243,20 +347,20 @@
                     <strong class="b-1">Por um acesso mais inclusivo á eduação.</strong>
                 </p>
                 <p>
-                     Para que instituições carentes tenham acesso a uma educação melhor e mais qualificada, você junto com a gente vamos ajudar algumas ONGs no intuito de melhor a qualidade de ensino e dar uma melhor visão de futuro para essas crianças! <strong class="b-1">Junte-se a essa causa e faça uma parceria conosco.</strong> <br>
+                     Para que instituições carentes tenham acesso a uma educação melhor e mais qualificada, você junto com a gente irá ajudar algumas ONGs no intuito de melhorar a qualidade de ensino e dar uma melhor visão de futuro para essas crianças! <strong class="b-1">Junte-se a essa causa e faça uma parceria conosco.</strong> <br>
                     <strong class="b-1">Para mais informações entre em contato através dos nossos canais de atendimento.</strong>
 
                 </p>
             </div>
             <div class="box-logo-certificate">
-                <img src="img/certificado-1.png" alt="certificado">
-                <img src="img/certificado-2.png" alt="certificado">
-                <img src="img/certificado-3.png" alt="certificado">
+                <img src="img/Selotransparente1.png" alt="certificado">
+                <img src="img/Selo fundo transparente.png" alt="certificado">
+                <img src="img/medalha.png" alt="certificado"> 
             </div>
         </section>
         <section class="sec-news">
             <div class="w-350">
-                <h1 class="mb-1">Novidaes e descontos especiais</h1>
+                <h1 class="mb-1 text-center">Novidaes e descontos especiais</h1>
                 <p class="text-blue size-1">Tenha valores promocionais e avaliações gratuitas preenchendo o formulário</p>
             </div>
             <form action="https://api.staticforms.xyz/submit" method="post" class="form-news">
@@ -311,7 +415,7 @@
 
                 <div class="ogr-footer-medias">
                     <div class="container-medias">
-                            <p class="text-white size-1 m-1">Fique em sintonia com a gente</p>
+                            <p class="text-white size-1 m-1" id="contact">Fique em sintonia com a gente</p>
                             <div class="container-imgs">
                                 <a href="https://api.whatsapp.com/send?phone=5561985487222&text=Olá,%20vim%20pelo%20site%20viigasbrasilia.com" target="_blank">
                                     <img src="img/whatsapp.png" alt="whatsapp">

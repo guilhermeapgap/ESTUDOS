@@ -1,6 +1,13 @@
 /* header */
+.nav-resposive{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 .header {
+  display: flex;
+  justify-content: space-between;
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   width: 100%;
@@ -37,7 +44,10 @@
 }
 
 /* menu */
-
+.menu{
+  display: flex;
+  justify-content: center;
+}
 .header .menu {
   clear: both;
   max-height: 0;
@@ -45,6 +55,12 @@
 }
 
 /* menu icon */
+
+.menu-icon{
+  width: 30px;
+  margin: 10px;
+}
+
 
 .header .menu-icon {
   cursor: pointer;
@@ -108,7 +124,10 @@
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-
+.menu{
+  position: relative;
+  right: 20%;
+}
 /* 48em = 768px */
 
 @media (min-width: 48em) {
@@ -126,4 +145,11 @@
   .header .menu-icon {
     display: none;
   }
+
 }
+
+
+/*  */
+
+
+
