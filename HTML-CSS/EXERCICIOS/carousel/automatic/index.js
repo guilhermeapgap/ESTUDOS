@@ -16,10 +16,10 @@ window.onload = function () {
             ul.style.left = '0';
         }
         ul.style.left = ul.offsetLeft - 2 + 'px';
-        //a1.innerHTML = "ul.offsetLeft: " + ul.offsetLeft;
-        //a2.innerHTML = "ul.offsetWidth: " + ul.offsetWidth;
+        a1.innerHTML = "ul.offsetLeft: " + ul.offsetLeft;
+        a2.innerHTML = "ul.offsetWidth: " + ul.offsetWidth;
     }
-    var timer = setInterval(scroll, 50);
+    var timer = setInterval(scroll, 40);
     //     setInterval(function(){
     //         if(ul.offsetLeft>0){
     //             ul.style.left=-ul.offsetWidth/2+'px';

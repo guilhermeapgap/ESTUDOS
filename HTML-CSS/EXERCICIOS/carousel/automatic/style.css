@@ -1,0 +1,40 @@
+
+.text{
+    text-align:center;
+    font-family:roboto;
+}
+#div1{
+    width: 600px;
+    height: 200px;
+    margin: 50px auto;
+    position: relative;
+    background: rgba(255, 166, 0, 0);
+    overflow: hidden;
+}
+
+#div1 ul {
+  top:10px;
+  position: absolute;
+  left: 0;
+  display:flex;
+
+}
+
+#div1 ul li {
+  float: left;
+  border:1px solid rgb(97, 26, 26);
+  width: 140px;
+  height: 180px;
+  list-style: none;
+}
+.img-automatic-carousel{
+    height: 130px;
+    width: 130px;
+}
+
+.container-automatic-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+}
