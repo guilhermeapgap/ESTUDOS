@@ -24,8 +24,52 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">About us</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                <li class="nav-item d-flex">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="contacts" data-toggle="modal" data-target="#exampleModal">
+                    contacts
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <img src="img/JS Flooring.png" alt="logo" class="branding-nav">
+                          <h5 class="modal-title m-2" id="exampleModalLabel">contacts</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-medias">
+                            <p class="text-white size-1 m-1" id="contact">Follow on social medias</p>
+                            <div class="container-imgs">
+                                <a href="#" target="_blank">
+                                    <img src="img/whatsapp.png" alt="whatsapp">
+                                </a>
+                                <a href="#" target="_blank">
+                                    <img src="img/instagram.png" alt="instagram">
+                                </a>
+                                <a href="#" target="_blank">
+                                    <img src="img/facebook.png" alt="facebook">
+                                </a>
+                                <a href="#" target="_blank">
+                                    <img src="img/linkedin.png" alt="linkedin">
+                                </a>
+                                <a href="#" >
+                                    <img src="img/youtube.png" alt="youtube">
+                                </a>
+                                    
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -46,6 +90,7 @@
             </h1>
           </div>  
     </header>
+
     <main>
         <section class="container-services-1">
           <h1 class="m-2">Check our services</h1>
@@ -103,10 +148,43 @@
             <img src="img/Trabalho.jpg" class="img-why-jm" alt="Jm Flooring">
             <a href="#" class="button-why-us">Learn more about us</a>
           </div>
-
         </section>
 
-        
+        <section class="container-section-3">
+          <h1> VIDEO </h1>
+          <video src="img/passandoVinyl (1).mp4" class="video-responsive" controls>vinyl</video>
+
+
+          <!--  -->
+          <section class="max-widht bg" id="projetos">
+            <div class="container">
+              <div class="content">
+                <div class="titulo">
+                </div>
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2" >
+                    <input type="radio" name="slider" id="item-3" >
+                    <div class="cards">
+                      <label class="card" for="item-1" id="song-1">
+                        <img src="img/Furadeira.jpg" alt="">
+                        <a href="#"><button class="saiba-mais">Saiba Mais</button></a>
+                      </label>
+      
+                      <label class="card" for="item-2" id="song-2">
+                        <img src="img/Escada.jpg" alt="">
+                        <a href="#"><button class="saiba-mais">Saiba Mais</button></a>
+                      </label>
+      
+                      <label class="card" for="item-3" id="song-3">
+                        <img src="img/Cozinha.jpg" alt="">
+                       <a href="#"> <button class="saiba-mais">Saiba Mais</button></a>
+                      </label>
+                    </div>
+              </div>
+            </div>
+          </section>
+          <!--  -->
+        </section>
     </main>
     
 
