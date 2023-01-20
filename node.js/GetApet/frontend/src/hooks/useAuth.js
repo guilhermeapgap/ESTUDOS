@@ -6,7 +6,7 @@ import useFlashMessage from './useFlashMessage'
 
 
 export default function useAuth(){
-    const {setFlshMessage} = useFlashMessage()
+    const { setFlashMessage } = useFlashMessage()
 
     async function register(user){
 
@@ -24,7 +24,7 @@ export default function useAuth(){
         }
 
 
-        setFlshMessage(msgText, msgType)
+        setFlashMessage(msgText, msgType)
     }
 
     return ( register )

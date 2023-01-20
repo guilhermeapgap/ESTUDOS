@@ -53,7 +53,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 1200px;
-    margin:20px auto;
+    margin:20px auto 200px auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
 }
@@ -93,13 +93,19 @@
 .container-section-2{
     display: flex;
     align-items: center;
+    text-align: center;
     max-width: 1200px;
     margin:20px auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: #5151516c;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
-    padding: 20px;
-    height: 600px;
+    padding: 20px; */
+    height: 450px;
+}
+.container-section-2 div h1{
+    color: #a66642;
+}
+.container-section-2 div p{
+    color: #3c3c3c;
 }
 .img-why-jm{
     max-width: 400px;
@@ -107,11 +113,53 @@
     border-radius: 10px;
     margin: 20px;
 }
-.button-why-us{
-    background-color: #5151514b;
-    padding: 10px;
-    border-radius: 10px;
+.box-choose-jm{
+    display: flex;
+    max-width: 400px;
 }
+.box-choose-jm > li{
+    list-style: none;
+    margin-top: 20px;
+    border-left: 2px solid #a66642;
+    color: #a66642;
+    padding: 10px;
+    font-weight: bold
+}
+.box-choose-jm li:nth-child(2){
+    margin-top: 45px;  
+}
+.box-choose-jm li:nth-child(3){
+    margin-top: 72px;  
+}
+.cardp-choose-jm{
+    max-width: 350px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: -60px -180px 0 0;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.animated-hr {
+
+    margin: auto;
+    width: 80%;
+    border: none;
+    height: 2px;
+    background-color: #a66642;
+    animation: animated-hr-animation 3s ease-in-out  1;
+
+
+  }
+  
+  @keyframes animated-hr-animation {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
 @media (max-width:820px) {
     .container-section-2{
         flex-wrap: wrap;
@@ -132,15 +180,75 @@
     flex-direction: column;
     align-items: center;
     max-width: 1200px;
-    margin:20px auto;
+    margin:200px auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: #d4cece6c;
+    background-color: #f2f2f2;
     border-radius: 10px;
     padding: 20px;
 }
 .video-responsive{
     max-width: 80%;
 }
+
+/* componet 4 forms */
+
+.sec-news{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1500px;
+    min-height: 400px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.form-news{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+}
+.form-news > *{
+    margin-bottom: 10px;
+    border: solid 2px gray;
+    width: 672px;
+    height: 44px;
+    padding: 0 15px;
+}
+.btn-submit{
+    border: none;
+    margin: 10px 0px;
+    background-color: #d6d6d6;
+    color: black;
+    border-radius: 10px;
+    width: 300px;
+    transition: 0.5s;
+}
+input::placeholder {
+    color: gray;
+  }
+.btn-submit:hover{
+    background-color: #8e8c8c;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+@media (max-width:1200px) {
+    .sec-news{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .input-type-1{
+        width: 246px;
+        padding-left: 10px;
+    }
+
+    .form-news{
+        align-items: center; margin-top: 30px;
+    }
+}
+
 /* Footer */
 footer{
     background-color: #515151;
@@ -240,13 +348,11 @@ footer{
     display: none;
    }
 
-   input {
-    display: none;
-   }
+   
 
    #projetos .container .cards {
     position: relative;
-    width: 1200px;
+    width: 800px !important;
     height: 500px;
    }
 
@@ -296,7 +402,7 @@ footer{
    .saiba-mais:hover {
     background: #3c3c3c;
    }
-
+   
    #item-1:checked ~ .cards #song-3, 
    #item-2:checked ~ .cards #song-1,
    #item-3:checked ~ .cards #song-2 {
@@ -320,3 +426,21 @@ footer{
     opacity: 1;
     z-index: 1;
 }
+
+#song-1, #song-2, #song-3{
+    width: 350px !important;
+}
+ 
+@media (max-width: 900px) {
+    #projetos{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
