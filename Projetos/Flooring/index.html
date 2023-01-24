@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jm Flooring</title>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+
     <link rel="shortcut icon" href="img/JS Flooring.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/scrollreveal.css">
 </head>
 <body>
     <header>
@@ -93,47 +100,32 @@
 
     <main>
         <section class="container-services-1">
-          <h1 class="m-2">Check our services</h1>
+          <h1 class="m-2">Our Services</h1>
           <ul class="services">
-            <li>
-              <div class="card card-services" style="width: 18rem;">
-                <img class="card-img-top" src="img/Quarto.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Flooring</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+            <li class="box-our-services card-services-1">
+              <div>
+                <img src="img/Cozinha.jpg" alt="">
+                <h2>Flooring instalation</h2>
+                <p>We will do your installation in a variety of materials, such as Hardwood, Laminate, Tile, Carpet or Vinyl.</p>
               </div>
+              <a href="#">-See more</a>
             </li>
-            <li>
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/Cozinha.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Stairs</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+
+            <li class="box-our-services card-services-2">
+              <div>
+                <img src="img/Quarto.jpg" alt="">
+                <h2>On-Site Consulations</h2>
+                <p>As a company, we understand that every home and business is unique, which is why we offer on-site consultations. This service allows us to see your space firsthand, understand your specific needs, and provide personalized recommendations for your flooring project.</p>
               </div>
+              <a href="#">-See more</a>
             </li>
-            <li>
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/Furadeira.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">finishes </h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+            <li class="box-our-services card-services-3">
+              <div>
+                <img src="img/cozinha2.jpg" alt="">
+                <h2>Floor Repair Service</h2>
+                <p>Our team of experienced flooring professionals has the skills and expertise to handle all types of floor repairs, including hardwood, laminate, tile, and vinyl. Whether you need to repair a small chip or scratch, or you need to address more significant damage, we have the tools and knowledge to get the job done.</p>
               </div>
-            </li>
-            <li>
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="img/Sala de estar.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Self leveling</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+              <a href="#">-See more</a>
             </li>
           </ul>
         </section>
@@ -143,11 +135,11 @@
           
           <div>
             <h1>Why choose The JM Flooring?</h1>
-            <p>We’re dedicated to providing each and every customer with the very best in service, quality, value, and workmanship. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aperiam excepturi pariatur nesciunt id voluptatem perspiciatis rerum non libero sint officiis, blanditiis ducimus ipsa veniam labore quae. Perferendis, labore molestiae.</p>
+            <p class="text-choose-1">We work with passion and dedication to offer our customers personalized and innovative solutions. By choosing our company, you have the guarantee that you are investing in something of quality and reliability.</p>
             <ul class="box-choose-jm">
-              <li>Escolha dos melhores pisos</li>
-              <li>Escolha dos melhores pisos</li>
-              <li>Escolha dos melhores pisos</li>
+              <li class="reason-1">Efficiency, Quality and Innovation</li>
+              <li class="reason-2">Customized and innovative projects</li>
+              <li class="reason-3">Capable professionals </li>
             </ul>
           </div>
           <div class="d-flex flex-column align-items-center">
@@ -158,60 +150,98 @@
         <hr class="animated-hr">
 
 
-        <section class="container-section-3">
-          <h1> VIDEO </h1>
-          <video src="img/passandoVinyl (1).mp4" class="video-responsive" controls>vinyl</video>
-
-
-          <!--  -->
-          <section class="max-widht bg" id="projetos">
-            <div class="container">
-              <div class="content">
-                <div class="titulo">
-                </div>
-                    <input type="radio" name="slider" id="item-1" checked>
-                    <input type="radio" name="slider" id="item-2" >
-                    <input type="radio" name="slider" id="item-3" >
-                    <div class="cards">
-                      <label class="card" for="item-1" id="song-1">
-                        <img src="img/Furadeira.jpg" alt="">
-                        <a href="#"><button class="saiba-mais">Saiba Mais</button></a>
-                      </label>
-      
-                      <label class="card" for="item-2" id="song-2">
-                        <img src="img/Escada.jpg" alt="">
-                        <a href="#"><button class="saiba-mais">Saiba Mais</button></a>
-                      </label>
-      
-                      <label class="card" for="item-3" id="song-3">
-                        <img src="img/Cozinha.jpg" alt="">
-                       <a href="#"> <button class="saiba-mais">Saiba Mais</button></a>
-                      </label>
-                    </div>
+        <section class="container-section-4">
+          <div class="container-forms">
+            <div class="card-contacts-popup">
+              <img src="img/web.jpg" alt="contacts" class="img-contacts">
+              <div class="card-contacts">
+                <img src="img/JS Flooring.png" alt="jmflooring">
+                <div>
+                  <p>@jmflooring</p>
+                  <p>+1(303)9999-9999</p>
+                  <p>North nauderdale. Florida</p>
+              </div>
               </div>
             </div>
-          </section>
-         </section>
-
-         <section class="sec-news">
-          <div class="w-350">
-              <h1 class="mb-1 text-center">Novidades e descontos especiais</h1>
-              <p class="text-blue size-1">Receba novidades, descontos especiais e atualizações ou deixe sua sugestão ou dúvidas aqui.</p>
+  
+            <div class="free-quote">
+              <h2>Give youself new flooring in 2023</h2>
+              <p>Don't wait any longer to get your floors looking like new again! Contact us now to schedule your consultation and get a free estimate for your floor repair needs. Our team of experienced professionals is ready to help you bring your floors back to life. Click on the "Contact Us" button below to get in touch with us today!</p>
+              <!-- popup -->
+              <!-- Button trigger modal -->
+              <button type="button" class="font-weight-bold style-contact" data-toggle="modal" data-target="#exampleModalCenter">
+                -Contact Us
+              </button>
+  
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Send us your feedback or questions!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body modal-confing-form">
+                    <!-- Make sure you don't change the form action-->
+                    <form action="https://api.staticforms.xyz/submit" method="post" class="d-flex flex-column form-contacts">
+                      <!-- Replace with accesKey sent to your email -->
+                      <input type="hidden" name="accessKey" value="5befb1ce-b693-4dce-a506-c862b54933c1"> <!-- Required -->
+                      <input type="text" name="name" placeholder="Name:" required> <!-- Optional -->
+                      <input type="text" name="email" placeholder="E-mail:" required> <!-- Optional -->
+                      <input type="text" name="phone" placeholder="Phone:" required> <!-- Optional -->
+                      <textarea name="message" placeholder="Send your message"></textarea> <!-- Optional -->
+                      <!-- Specify @ as reply to value if you want it to be customers email -->
+                      <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+                      <!-- If you want form to redirect to a specific url after submission -->
+                      <input type="hidden" name="redirectTo" value="#"> <!-- Optional -->
+                      <input type="submit" value="Submit"/>
+                    </form>
+                    <div class="container-imgs-form d-flex justify-content-center">
+                      <a href="#" target="_blank">
+                          <img src="img/whatsapp.png" alt="whatsapp">
+                      </a>
+                      <a href="#" target="_blank">
+                          <img src="img/instagram.png" alt="instagram">
+                      </a>
+                      <a href="#" target="_blank">
+                          <img src="img/facebook.png" alt="facebook">
+                      </a>
+                    </div>
+  
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn-close" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
           </div>
-          <form action="https://api.staticforms.xyz/submit" method="post" class="form-news">
-              <!-- Replace with accesKey sent to your email -->
-              <input type="hidden" name="accessKey" value="5befb1ce-b693-4dce-a506-c862b54933c1"> <!-- Required -->
+        </section>
 
-              <input type="text" placeholder="Nome" class="input-type-1"  name="name">
-              <input type="email" name="email" id="email" placeholder="E-mail" class="input-type-1" name="email">
-              <input type="text" name="phone" placeholder="Telefone" class="input-type-1" > <!-- Optional -->
+        <section class="container-section-3">
+          <h1> VIDEOS </h1>
+          <div class="d-flex m-2">
+            <video src="img/passandoVinyl (1).mp4" class="video-responsive video-1" controls>vinyl</video>
+            <div>
+              <h1>Lorem ipsum dolor sit amet consectetur</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste non excepturi facilis, minus doloremque saepe veniam, at quas vel natus veritatis quibusdam? <br> North lauderdale, Florida <br> October, 2022.</p>
+              <a href="">see more</a>
+            </div>
+          </div>
+          <div class="d-flex m-2">
+            <div>
+              <h1>Lorem ipsum dolor sit amet consectetur</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste non excepturi facilis, minus doloremque saepe veniam, at quas vel natus veritatis quibusdam? <br> North lauderdale, Florida <br> October, 2022.</p>
+              <a href="">see more</a>
+            </div>
+            <video src="img/passandoVinyl (2).mp4" class="video-responsive video-2" controls>vinyl</video>
+          </div>
+          <a href="services.html">See More</a>
 
-              <textarea name="message" placeholder="Deixe sua mensagem" class="input-type-1"></textarea> <!-- Optional -->
-              <input type="submit" value="Enviar" class="btn-submit input-type-1">             
-              <input type="hidden" name="redirectTo" value="">
-          </form>
-      </section>
-
+         </section>
 
 
     </main>
@@ -280,10 +310,8 @@
           </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-
+    
+    <script src="ScrollReveal.js"></script>
 
 </body>
 </html>

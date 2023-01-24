@@ -1,0 +1,71 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+.container-services{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+}
+.banner-services{
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    background: url(../img/Sala\ de\ estar.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.banner-services > div >h1{
+    font-size: 5em;
+    color: #a66642;
+    margin: 20px 50px;
+}
+.banner-services > div{
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+
+}
+.video-services{
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 20px;
+}
+.componet-services{
+    display: flex;
+    max-height: 400px;
+    background-color: white;
+    margin: 20px;
+    justify-content: center;
+}
+.componet-services > div{
+    margin-top: 40px;
+}
+
+@media (max-width:1200px) {
+    .container-services{
+        margin: 5px;
+    }
+    .componet-services{
+        flex-wrap: wrap;
+        max-height: 800px;
+        padding: 20px;
+        margin: 5px;
+    }
+    .video-services{
+        max-width: 100%;
+        max-height: 400px;
+        margin-right: 0px;
+    }   
+}

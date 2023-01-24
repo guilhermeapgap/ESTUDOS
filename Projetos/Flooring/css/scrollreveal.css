@@ -1,0 +1,10 @@
+.animated-hr{
+    visibility: hidden;
+}
+
+.container-services-1, .container-section-2, .container-section-3,.container-section-4,.reason-1,.reason-2,.reason-3{
+    visibility: hidden;
+}
+ .card-services-1,.card-services-2,.card-services-3,.video-1,.video-2{
+    visibility: hidden;
+ }
