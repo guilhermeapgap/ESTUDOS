@@ -1,7 +1,20 @@
 /* Universel */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Fredericka+the+Great&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;900&family=Slabo+27px&display=swap');
 *{
     padding: 0px;
     margin: 0px;
+    font-family: 'Dosis', sans-serif;
+
+}
+.color-f2f2f2{
+    color: #f2f2f2;
+}
+.color-brown{
+    color: #a66642;
+}
+.bg-brown{
+    background-color: #a66642;
+    height: 2px;
 }
 .btn-close{
     background-color: #a66642;
@@ -227,7 +240,18 @@
 .video-responsive{
     max-width:45%;
 }
-
+.btn-brown{
+    background-color: #a66742ba;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.5s;
+}
+.btn-brown:hover{
+    background-color: #a66642;
+    color: white;
+    text-decoration: none;
+}
 .container-section-3 div{
     max-width: 1000px;
     align-items: center;
@@ -277,6 +301,7 @@
     margin: 20px;
 }
 .img-contacts{
+    max-width: 400px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -394,7 +419,23 @@ footer{
     background-color: #515151;
     min-height: 400px;
 }
+.whatsapp-fixed > a> img{
+    max-width: 64px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.whatsapp-fixed{
+    display: flex;
+    justify-content: flex-end;
+}
 .times-footer > p{
+    color: white;
+}
+.text-footer{
+    color: white;
+}
+.text-footer:hover{
     color: white;
 }
 .times-footer{
@@ -450,6 +491,9 @@ footer{
         flex-direction: column;
 
     }
+    .whatsapp-fixed > a> img{
+        max-width: 54px;
+    }
 }
 @media (min-width: 1200px) {
     .container-footer{
@@ -481,11 +525,3 @@ footer{
     }
 
 }
-
-
-
-
-
-
-
-

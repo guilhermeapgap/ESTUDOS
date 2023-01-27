@@ -4,9 +4,9 @@ sr.reveal('.container-services-1',{duration: 1000})
 sr.reveal('.animated-hr',{duration: 1000})
 sr.reveal('.container-section-2')
 sr.reveal('.container-section-3')
-sr.reveal('.container-section-4', {
-    rotate:{x:80, y:0, z:0},
-    duration: 1000,
+ sr.reveal('.card-contacts-popup', {
+     rotate:{x:80, y:0, z:0},
+     duration: 1000,
 })
 sr.reveal('.reason-1', {
     rotate:{x:80, y:0, z:0},

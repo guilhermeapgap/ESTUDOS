@@ -1,0 +1,5 @@
+.componet-services{
+    max-width: 1000px;
+    display: flex !important;
+    justify-content: space-between !important;
+}
