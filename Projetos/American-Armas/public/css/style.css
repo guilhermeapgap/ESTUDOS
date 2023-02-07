@@ -1,0 +1,34 @@
+/* Universal */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+/* NavBar */
+
+.logo-american{
+    width: 180px;
+}
+.config-navbar{
+    display: flex !important;
+    justify-content: space-between !important;
+    margin: 10px 20px ;
+}
+
+.logo-companies > img{
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+
+@media (min-width:992px) {
+    .nav-dropdown-config{
+        display: flex;
+        justify-content: end;
+    }
+}
+
