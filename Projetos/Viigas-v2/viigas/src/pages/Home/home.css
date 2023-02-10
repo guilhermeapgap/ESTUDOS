@@ -1,0 +1,14 @@
+.home-container{
+    min-height: 800px;
+}
+
+.banner{
+    background-image: url(../../../public/img/banner1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 450px;
+    border-bottom: solid 6px #61328A;
+    border-top: solid 6px #61328A;
+}

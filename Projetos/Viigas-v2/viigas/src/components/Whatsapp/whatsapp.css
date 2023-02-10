@@ -1,0 +1,17 @@
+.logo-whatsapp-fixed{
+    background: url(../../../public/img/whatsapp-logo-1.png);
+    height: 100px;
+    width: 100px;
+}
+
+
+.whatsapp-fixed > a> img{
+    max-width: 64px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.whatsapp-fixed{
+    display: flex;
+    justify-content: flex-end;
+}
