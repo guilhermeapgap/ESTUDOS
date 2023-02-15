@@ -10,10 +10,8 @@
 
 /* NavBar */
 
- .logo-american{
-    width: 180px;
-}
-.config-navbar{
+
+/* .config-navbar{
     display: flex !important;
     justify-content: space-between !important;
     margin: 10px 20px ;
@@ -31,4 +29,4 @@
         display: flex;
         justify-content: end;
     }
-}
+} */
