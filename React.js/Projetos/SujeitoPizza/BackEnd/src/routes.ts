@@ -4,12 +4,12 @@ import { CreateUserController } from './controllers/user/createUserController'
 import { AuthUserController } from './controllers/user/AuthUserController'
 import { DetaillUserController } from './controllers/user/DetaillUserController'
 
-
-import { isAuthenticated } from './middlewares/isAuthenticated'
-
 import { CreateCategoryController } from './controllers/Category/CreateCategoryController'
 import { ListCategoryController } from './controllers/Category/ListCategoryController'
 
+import { CreateProductController } from './controllers/products/CreateProductController'
+
+import { isAuthenticated } from './middlewares/isAuthenticated'
 
 const router = Router()
 
@@ -25,4 +25,6 @@ router.post('/category' , isAuthenticated, new CreateCategoryController().handle
 
 router.get('/category' , isAuthenticated, new ListCategoryController().handle)
 
+// Rotas product
+router.post('/product', isAuthenticated, new CreateProductController().handle)
 export { router }
