@@ -5,6 +5,7 @@ import styles from '../styles/home.module.scss'
 import logoImg from '../../public/logo.svg'
 
 import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/Button"
 
 export default function Home() {
   return (
@@ -28,7 +29,12 @@ export default function Home() {
             type="password"
           />
 
-          
+          <Button
+            type="submit"
+            loading={false} 
+          >
+            Cadastrar
+          </Button>
         </form>
       </div>
     </div>
