@@ -1,8 +1,8 @@
 import Head from "next/head"
 import Image from "next/image"
-import styles from '../styles/home.module.scss'
+import styles from '../../styles/home.module.scss'
 
-import logoImg from '../../public/logo.svg'
+import logoImg from '../../../public/logo.svg'
 
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/Button"
@@ -10,25 +10,37 @@ import { Button } from "@/components/ui/Button"
 
 import Link from "next/link"
 
-export default function Home() {
+export default function SignUp() {
   return (
     <>
     <Head>
-      <title>SujeitoPizza - Faça seu login</title>
+      <title>Faça seu cadastro agora!</title>
     </Head>
     <div className={styles.containerCenter}>
       <Image src={logoImg} alt="Logo Sujeito Pizzaria"/>
 
       <div className={styles.login}>
+
+        <h1>Criando sua conta</h1>
+
         <form>
+
+
           <Input 
-            placeholder="Digite seu email :"
+            placeholder="Digite seu nome"
             type="text"
           />
 
+
+          <Input 
+            placeholder="Digite seu email"
+            type="text"
+          /> 
+
+
           
           <Input 
-            placeholder="Digite sua senha :"
+            placeholder="Digite sua senha"
             type="password"
           />
 
@@ -36,11 +48,11 @@ export default function Home() {
             type="submit"
             loading={false} 
           >
-            Acessar
+            Cadastrar
           </Button>
           
-          <Link href="/signup" legacyBehavior>
-            <a className={styles.text}>Não possui ums conta? Cadastre-se</a>         
+          <Link href="/" legacyBehavior>
+            <a className={styles.text}>Já possui ums conta? Faça login</a>         
           </Link>
         </form>
       </div>
