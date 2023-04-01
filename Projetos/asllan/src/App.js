@@ -3,13 +3,16 @@ import './App.css';
 
 //components
 import Footer from './components/footer/index';
-import Navbar from './components/navbar';
+import Main from './components/main';
 
+//bootstrap
+import CollapsibleExample from './components/bootstrap/navbar';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <CollapsibleExample/>
+      <Main/>
       <Footer/>
     </div>
   );
