@@ -25,7 +25,8 @@ export default function Home() {
     event.preventDefault();
 
     if(email === '' || password === ''){
-      
+      alert('Preencha os dados')
+      return;
     }
 
     let data = {
