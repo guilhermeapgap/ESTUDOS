@@ -30,12 +30,17 @@ export default function Home() {
       return;
     }
 
+    setLoading(true)
+
     let data = {
       email,
       password
     }
 
     await signIn(data)
+
+
+    setLoading(false)
   }
 
   return (
@@ -65,7 +70,7 @@ export default function Home() {
 
           <Button
             type="submit"
-            loading={false} 
+            loading={loading} 
           >
             Acessar
           </Button>
