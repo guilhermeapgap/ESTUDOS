@@ -17,6 +17,7 @@ export default function Home() {
   const { signIn } = useContext(AuthContext)
 
   
+  
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -54,7 +55,7 @@ export default function Home() {
             value={email}
             onChange= { (e)=> setEmail(e.target.value)}
           />
-
+          <h1>oi</h1>
           
           <Input 
             placeholder="Digite sua senha"
