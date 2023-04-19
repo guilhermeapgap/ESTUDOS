@@ -6,11 +6,13 @@ import { api } from '@/services/apiClient';
 import { destroyCookie ,setCookie, parseCookies} from 'nookies';
 import Router from 'next/router';
 
+import { toast } from 'react-toastify';
 type AuthContextData = {
     user: UserProps;
     isAuthenticated: boolean;
-    signIn: (credentials: SignInProps) => Promise<void>
+    signIn: (credentials: SignInProps) => Promise<void>;
     signOut: () => void;
+    signUp: (credentials: SignUpProps) => Promise<void>;
 }
 
 type UserProps = {
@@ -20,6 +22,12 @@ type UserProps = {
 }
 
 type SignInProps = {
+    email:string;
+    password: string;
+}
+
+type SignUpProps = {
+    name: string;
     email:string;
     password: string;
 }
@@ -69,18 +77,39 @@ export function AuthProvider({ children }: AuthProviderProps){
             //passar para proximos requisições o nosso token 
             api.defaults.headers['Authorization']= `Bearer ${token}`
 
+            toast.success('Logado com sucesso!')
 
             //redirecionar o user para a /dashboard
             Router.push('/dashboard')
 
             
         }catch(err){
+            toast.error('Erro ao acessar!')
             console.log('erro ao acessar ', err)
         }
     }
 
+
+    async function signUp({name,email,password}: SignUpProps) {
+        try{
+            const respose = await api.post('/users',{
+                name,
+                email,
+                password
+            })
+
+            toast.success("Conta criada com sucesso")
+
+            Router.push('/')
+            
+        }catch(err){
+            toast.error('Erro ao cadastrar')
+            console.log('erro ao cadastrar' , err)
+        }
+    }
+
     return(
-        <AuthContext.Provider value={{ user, isAuthenticated, signIn, signOut }}>
+        <AuthContext.Provider value={{ user, isAuthenticated, signIn, signOut, signUp }}>
           {children}
         </AuthContext.Provider>
       )
