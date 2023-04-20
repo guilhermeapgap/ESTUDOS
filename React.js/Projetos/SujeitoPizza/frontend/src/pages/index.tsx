@@ -14,6 +14,8 @@ import { AuthContext } from "@/context/AuthContext"
 
 import Link from "next/link"
 
+import { canSSRGuest } from '@/utils/canSSRGuest'
+
 export default function Home() {
 
   const { signIn } = useContext(AuthContext)
@@ -62,10 +64,6 @@ export default function Home() {
             value={email}
             onChange= { (e)=> setEmail(e.target.value)}
           />
-
-          <h1>oi
-            tudo bem?
-          </h1>
           
           <Input 
             placeholder="Digite sua senha"
@@ -90,3 +88,9 @@ export default function Home() {
     </>
   )
 }
+
+export const getServerSideProps = canSSRGuest(async (ctx)=>{
+  return{
+    props:{}
+  }
+})
