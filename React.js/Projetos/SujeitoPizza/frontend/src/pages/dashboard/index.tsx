@@ -14,6 +14,7 @@ export default function Dashboard(){
         <div>
             <Header/>
             <h1>Painelllll</h1>
+            <h2>produtos</h2>
         </div>
         </>
     )
