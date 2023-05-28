@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { 
   View, 
   Text, 
@@ -9,8 +9,6 @@ import {
 } from 'react-native'
 
 export default function SignIn(){
-
-  
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -19,9 +17,11 @@ export default function SignIn(){
     if(email === '' || password === ''){
       return;
     }
-    
-    console.log('login ' + email)
+
+    console.log("Email digitado " + email)
   }
+
+
   return(
     <View style={styles.container}>
       <Image
@@ -44,7 +44,7 @@ export default function SignIn(){
           placeholderTextColor="#F0F0F0"
           secureTextEntry={true}
           value={password}
-          onChangeText={setPassword}
+          onChangeText={setPassword}          
         />     
 
         <TouchableOpacity style={styles.button} onPress={handleLogin}>
@@ -64,10 +64,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#1d1d2e'
   },
   logo:{
-    marginBottom: 18,
-    width:250,
-    height:50,
-    padding:10,
+    marginBottom: 18
   },
   inputContainer:{
     width: '95%',
