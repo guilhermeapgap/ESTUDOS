@@ -9,18 +9,18 @@ import {
 } from 'react-native'
 
 export default function SignIn(){
+
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
   function handleLogin(){
-
+    
     if(email === '' || password === ''){
       return;
     }
 
     console.log("Email digitado " + email)
   }
-
 
   return(
     <View style={styles.container}>
@@ -45,11 +45,11 @@ export default function SignIn(){
           secureTextEntry={true}
           value={password}
           onChangeText={setPassword}          
-        />     
+        />       
 
         <TouchableOpacity style={styles.button} onPress={handleLogin}>
           <Text style={styles.buttonText}>Acessar</Text>
-        </TouchableOpacity>   
+        </TouchableOpacity>    
       </View>
 
     </View>
@@ -64,7 +64,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#1d1d2e'
   },
   logo:{
-    marginBottom: 18
+    marginBottom: 18,
+    width:250,
+    height:50,
+    padding:10,
   },
   inputContainer:{
     width: '95%',
