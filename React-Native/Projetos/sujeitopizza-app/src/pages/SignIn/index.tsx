@@ -29,14 +29,16 @@ export default function SignIn(){
         source={require('../../assets/logo.png')}
       />
 
+
       <View style={styles.inputContainer}>
         <TextInput
-          placeholder="Digite seu email:"   
+          placeholder="Digite seu emailllll:"   
           style={styles.input}     
           placeholderTextColor="#F0F0F0"
           value={email}
           onChangeText={setEmail}
         />
+
 
         <TextInput
           placeholder="Sua senha:"      
@@ -48,7 +50,7 @@ export default function SignIn(){
         />       
 
         <TouchableOpacity style={styles.button} onPress={handleLogin}>
-          <Text style={styles.buttonText}>Acessar</Text>
+          <Text style={styles.buttonText}>Acessssar</Text>
         </TouchableOpacity>    
       </View>
 
