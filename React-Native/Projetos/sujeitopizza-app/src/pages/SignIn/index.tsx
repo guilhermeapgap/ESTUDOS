@@ -32,7 +32,7 @@ export default function SignIn(){
 
       <View style={styles.inputContainer}>
         <TextInput
-          placeholder="Digite seu emailllll:"   
+          placeholder="Digite seu emaill:"   
           style={styles.input}     
           placeholderTextColor="#F0F0F0"
           value={email}
