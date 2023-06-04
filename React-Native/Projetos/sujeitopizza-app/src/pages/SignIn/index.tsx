@@ -34,7 +34,7 @@ export default function SignIn(){
 
       <View style={styles.inputContainer}>
         <TextInput
-          placeholder="Digite seu emaill:"   
+          placeholder="Digite seu email:"   
           style={styles.input}     
           placeholderTextColor="#F0F0F0"
           value={email}
@@ -43,7 +43,7 @@ export default function SignIn(){
 
 
         <TextInput
-          placeholder="Sua senha:"      
+          placeholder="Sua senhaq:"      
           style={styles.input}   
           placeholderTextColor="#F0F0F0"
           secureTextEntry={true}
