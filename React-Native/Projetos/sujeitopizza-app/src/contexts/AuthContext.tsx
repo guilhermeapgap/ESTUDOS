@@ -1,5 +1,5 @@
 import React,{useState, createContext, ReactNode} from "react";
-
+import { api } from "../services/api";
 type AuthContextData = {
     user: UserProps
     isAuthenticated: boolean
@@ -32,12 +32,20 @@ export function AuthProvider({children}:AuthProviderProps){
         email: '',
         token: ''
     })
+    
+    const [loadingAuth, setLoadingAuth] = useState(false)
 
     const isAuthenticated = !!user.name
 
     async function signIn({email,password}:SignInProps){
-        console.log(email)
-        console.log(password)
+        setLoadingAuth(true)
+
+        try{
+
+        }catch(err){
+            console.log('erro ao acessar', err)
+            setLoadingAuth(false)
+        }
     }
 
     return(
