@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+
 import { 
   View, 
   Text, 
@@ -40,7 +41,6 @@ export default function SignIn(){
           value={email}
           onChangeText={setEmail}
         />
-
 
         <TextInput
           placeholder="Sua senhaq:"      
