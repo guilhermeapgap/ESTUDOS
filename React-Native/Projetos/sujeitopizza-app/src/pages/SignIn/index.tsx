@@ -43,7 +43,7 @@ export default function SignIn(){
         />
 
         <TextInput
-          placeholder="Sua senhaq:"      
+          placeholder="Sua senha:"      
           style={styles.input}   
           placeholderTextColor="#F0F0F0"
           secureTextEntry={true}
