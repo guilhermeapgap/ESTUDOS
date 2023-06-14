@@ -1,4 +1,8 @@
 import React,{useState, createContext, ReactNode} from "react";
+
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+
 import { api } from "../services/api";
 type AuthContextData = {
     user: UserProps
@@ -41,7 +45,12 @@ export function AuthProvider({children}:AuthProviderProps){
         setLoadingAuth(true)
 
         try{
+            const response = await api.post('/session',{
+                email,
+                password
+            })
 
+            console.log(response.data)
         }catch(err){
             console.log('erro ao acessar', err)
             setLoadingAuth(false)
