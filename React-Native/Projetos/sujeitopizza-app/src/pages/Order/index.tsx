@@ -59,7 +59,9 @@ export default function Order(){
 
                 
                 <TouchableOpacity style={styles.button}>
+
                     <Text style={styles.buttonText}>Avançar</Text>
+                    
                 </TouchableOpacity>
             </View>
         </View>
