@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React,{useState, useEffect} from 'react'
 import {
     View,
     Text,
@@ -21,12 +20,28 @@ type RouteDetailParams = {
     }
 }
 
+type CategoryProps = {
+    id: string;
+    name: string;
+}
+
 type OrderRouteProps = RouteProp<RouteDetailParams, 'Order'>;
 
 export default function Order(){
 
     const route = useRoute<OrderRouteProps>()
     const navigation = useNavigation()
+
+    const [category, setCategory] = useState<CategoryProps[] | [] >([])
+    const [categorySelected, setCategorySeleced] = useState<CategoryProps>( )
+    const [amount,setAmount] = useState('1')
+
+    useEffect(() =>{
+        async function loadinfo(){
+            const response = await api.get('category')
+            console.log(response.data)
+        }
+    },[])
 
     async function handleCloseOrder() {
         try{
@@ -37,7 +52,7 @@ export default function Order(){
             })
 
             navigation.goBack()
-            
+
         }catch(err){
             console.log(err)
         }
@@ -66,7 +81,8 @@ export default function Order(){
                     style={[styles.input,{width:'60%', textAlign:'center'}]}
                     placeholderTextColor='#f0f0f0'
                     keyboardType='numeric'
-                    value='1'
+                    value={amount}
+                    onChangeText={setAmount}
                 />
             </View>
             <View  style={styles.actions}>
