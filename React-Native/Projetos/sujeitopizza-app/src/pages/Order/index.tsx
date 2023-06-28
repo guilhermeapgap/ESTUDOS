@@ -4,7 +4,8 @@ import {
     Text,
     StyleSheet, 
     TouchableOpacity,
-    TextInput
+    TextInput,
+    Modal
 } from 'react-native'
 
 import { useRoute, RouteProp, useNavigation} from '@react-navigation/native'
@@ -12,6 +13,8 @@ import { useRoute, RouteProp, useNavigation} from '@react-navigation/native'
 import { Feather } from '@expo/vector-icons';
 
 import { api } from '../../services/api';
+
+import { ModalPicker } from '../../components/ModalPicker';
 
 type RouteDetailParams = {
     Order:{
@@ -33,14 +36,21 @@ export default function Order(){
     const navigation = useNavigation()
 
     const [category, setCategory] = useState<CategoryProps[] | [] >([])
-    const [categorySelected, setCategorySeleced] = useState<CategoryProps>( )
+    const [categorySelected, setCategorySeleced] = useState<CategoryProps>()
+    const [modalCategoryVisible, setModalcategoryVisible] = useState(false)
+
     const [amount,setAmount] = useState('1')
 
     useEffect(() =>{
         async function loadinfo(){
             const response = await api.get('category')
-            console.log(response.data)
+            
+            
+            setCategory(response.data)
+            setCategorySeleced(response.data[0])
         }
+
+        loadinfo()
     },[])
 
     async function handleCloseOrder() {
@@ -67,9 +77,13 @@ export default function Order(){
                 </TouchableOpacity>
             </View>
 
-            <TouchableOpacity style={styles.input}>
-                <Text style={{color:'#fff'}}>Pizzas</Text>
-            </TouchableOpacity>
+            {category.length !== 0 &&(
+                <TouchableOpacity style={styles.input} onPress={() => setModalcategoryVisible(true)}>
+                    <Text style={{color:'#fff'}}>
+                        {categorySelected?.name}
+                    </Text>
+                </TouchableOpacity>
+            )}
 
             <TouchableOpacity style={styles.input}>
                 <Text  style={{color:'#fff'}}>Pizzas de calabresa</Text>
@@ -97,6 +111,20 @@ export default function Order(){
 
                 </TouchableOpacity>
             </View>
+
+
+            <Modal
+                transparent={true}
+                visible={modalCategoryVisible}
+                animationType='fade'
+            >
+                <ModalPicker
+                handleCloseModal={()=> setModalcategoryVisible(false)}
+                options={category}
+                selectedItem={() => {}}
+                />   
+            </Modal>
+
         </View>
         
     )
