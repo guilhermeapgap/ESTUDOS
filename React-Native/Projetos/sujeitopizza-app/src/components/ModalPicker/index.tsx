@@ -12,7 +12,7 @@ import { CategoryProps } from "../../pages/Order";
 interface ModalPickerProps{
     options: CategoryProps[];
     handleCloseModal: () => void;
-    selectedItem: () => void;
+    selectedItem: (item:CategoryProps) => void;
 }
 
 const {width: WIDTH, height: HEIGTH} = Dimensions.get('window')
@@ -20,7 +20,9 @@ const {width: WIDTH, height: HEIGTH} = Dimensions.get('window')
 export function ModalPicker({options, handleCloseModal, selectedItem}:ModalPickerProps){
 
     function onPressItem(item:CategoryProps){
-        console.log(item)
+        //console.log(item)
+        selectedItem(item)
+        handleCloseModal()
     }
 
     const option = options.map((item, index) =>{
@@ -58,5 +60,16 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#8a8a8a',
         borderRadius: 4,
+    },
+    option:{
+        alignItems:"flex-start",
+        borderTopWidth: 0.8,
+        borderTopColor: '#8a8a8a'
+    },
+    item:{
+        margin:10,
+        fontSize:14,
+        fontWeight: 'bold',
+        color:'#101026'
     }
 })
