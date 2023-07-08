@@ -11,5 +11,7 @@ class ListCategoryController{
         return res.json(category)
     }
 }
+   
+
 
 export {ListCategoryController}
