@@ -1,0 +1,75 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\guilh\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add pisma
+
+PATH: 
+  C:\Program Files\Java\zulu17.42.19-ca-jdk17.0.7-win_x64 (1)\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\guilh\AppData\Local\Microsoft\WindowsApps;C:\Users\guilh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\guilh\AppData\Roaming\npm;C:\Program Files\Java\zulu17.42.19-ca-jdk17.0.7-win_x64 (1)\zulu17.42.19-ca-jdk17.0.7-win_x64\bin;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/pisma: Not found
+      at params.callback [as _callback] (C:\Users\guilh\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Users\guilh\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (C:\Users\guilh\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (C:\Users\guilh\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "back-end",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/guilhermeapgap/E-commerce.git"
+    },
+    "author": "Guilherme",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/guilhermeapgap/E-commerce/issues"
+    },
+    "homepage": "https://github.com/guilhermeapgap/E-commerce#readme",
+    "dependencies": {
+      "@prisma/client": "^4.13.0",
+      "@types/cors": "^2.8.13",
+      "@types/express": "^4.17.17",
+      "bcryptjs": "^2.4.3",
+      "cors": "^2.8.5",
+      "dotenv": "^16.0.3",
+      "express": "^4.18.2",
+      "express-async-errors": "^3.1.1",
+      "jsonwebtoken": "^9.0.0",
+      "multer": "^1.4.5-lts.1",
+      "yarn": "^1.22.19"
+    },
+    "devDependencies": {
+      "@types/bcryptjs": "^2.4.2",
+      "@types/jsonwebtoken": "^9.0.1",
+      "@types/multer": "^1.4.7",
+      "prisma": "^4.13.0",
+      "ts-node-dev": "^2.0.0",
+      "typescript": "^4.9.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
